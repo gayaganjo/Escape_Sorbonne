@@ -3,7 +3,7 @@
     define('HOST','localhost');
     define('DB_NAME','escape_sorbonne');
     define('USER','root');
-    define('PASS','');
+    define('PASS','root');
    
     try {
 	      $db = new PDO("mysql:host=" . HOST . ";dbname=" . DB_NAME, USER, PASS);
