@@ -11,11 +11,17 @@ dcterms:title "Formation Université Paris 8" .
 
 
 escapesorbonne:HasIndice a rdf:Property ; 
-   rdfs:label "A comme indice" ; 
+   rdfs:label "indice" ; 
    rdfs:domain o:Resource ; 
    vs:term_status "experimental" .
 
 escapesorbonne:Classe a rdf:Property ; 
    rdfs:label "classe" ; 
+   rdfs:domain o:Resource ; 
+   vs:term_status "experimental" .
+
+
+ escapesorbonne:joueur a rdf:Property ; 
+   rdfs:label "joueur" ; 
    rdfs:domain o:Resource ; 
    vs:term_status "experimental" .
