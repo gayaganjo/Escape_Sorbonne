@@ -7,7 +7,7 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-  margin:0; padding:0; border:0; background:transparent;
+  margin:-1px; padding:0; border:0; background:transparent;
   /*vertical-align: baseline;*/
 }
 
@@ -28,13 +28,14 @@ body {
 
 header {
   min-height: 50px;
-  position: fixed;
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
-  /* opacity: 0.9; */
-  background-color:rgb(68, 38, 38);
-  z-index: 2;
+  opacity: 0.9;
+  z-index: 5;
+  height: 41px;
+  background-color: rgb(47, 29, 22);
 }
 
 header h1 {
@@ -49,9 +50,7 @@ header ul {
   padding: 15px 10px 0 0;
 }
 
-header li {
-  border-left: 1px solid #ccc;
-}
+
 
 header li:first-child {
   border: none;
@@ -60,7 +59,7 @@ header li:first-child {
 header li a {
   display: block;
   padding: 0 10px;
-  color: #999;
+  color: rgb(241, 240, 239);
   font-size: 16px;
   line-height: 30px;
   text-decoration: none;
@@ -82,9 +81,9 @@ input#control-nav {
 /* content */
 section {
   padding: 80px 20px 50px;
-  border-top: 1px solid #333;
+ 
   font-size: 20px;
-  line-height: 24px;
+ 
 }
 
 section:after {
@@ -278,7 +277,7 @@ input[id*="modal_"]:checked + div.modal .modal-content {
     bottom: 0;
     width: 250px;
     border-left: 1px solid #ccc;
-    background: rgb(65, 23, 23);
+    background: rgb(23, 12, 9);
     overflow-x: auto;
     z-index: 2;
     -webkit-transition: all 500ms ease;
@@ -294,36 +293,41 @@ input[id*="modal_"]:checked + div.modal .modal-content {
 
   header ul.list-auto li {
     width: 100%;
-    border: solid rgb(65, 23, 23);;
+   
     border-width: 0 0 1px;
   }
 
   header li a {
     padding: 15px 10px;
+
   }
 
   header li a:hover {
-    background-color: rgb(54, 19, 19);
+    background-color: rgb(181, 158, 114);
   }
 
-  .control-nav { /* label icon */
+  .control-nav {
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 15px;
     display: block;
-    width: 30px;
-    padding: 5px 0;
-    border: solid #333;
-    border-width: 3px 0;
+    width: 38px;
+    padding: 10px 0;
+    border: solid  #797979;
+        border-top-width: medium;
+        border-right-width: medium;
+        border-bottom-width: medium;
+        border-left-width: medium;
+    border-width: 2px 0;
     z-index: 2;
     cursor: pointer;
-  }
+}
 
   .control-nav:before {
     content: "";
     display: block;
-    height: 3px;
-    background: #333;
+    height: 2px;
+    background: #797979;
   }
 
   .control-nav-close {
@@ -412,8 +416,8 @@ input[id*="modal_"]:checked + div.modal .modal-content {
     transform: scale(1);
   }
   a {
-    text-decoration-color:  rgb(68, 38, 38);
-    
+    text-decoration-color:  rgb(255, 255, 255);
+    color: white;
   }
   .highlights input:checked + div p {
     opacity: 1;

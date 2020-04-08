@@ -1,0 +1,42 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Science: Computers",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Qui est le fondateur de la Sorbonne ?",
+            "correct_answer": "Robert de Sorbon",
+            "incorrect_answers": [
+                "Richelieu",
+                "<img class='img-reponse' src='http://localhost/Escape_Sorbonne/src/img/sorbonne.jpg >",
+                "Saint louis"
+            ]
+        },
+        {
+            "category": "Science: Computers",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "In any programming language, what is the most common way to iterate through an array?",
+            "correct_answer": "&#039;For&#039; loops",
+            "incorrect_answers": [
+                "&#039;If&#039; Statements",
+                "&#039;Do-while&#039; loops",
+                "&#039;While&#039; loops"
+            ]
+        },
+        
+        {
+            "category": "Science: Computers",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "qui a fait ce lieu, sachant que le fondateur lui meme a participer a construire ce dernier, du coup ?",
+            "correct_answer": "&#039;For&#039; loops",
+            "incorrect_answers": [
+                "&#039;If&#039; Statements",
+                "&#039;Do-while&#039; loops",
+                "&#039;While&#039; loops"
+            ]
+        }
+    ]
+}

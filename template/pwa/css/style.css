@@ -1,6 +1,9 @@
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
-
+section{
+    padding: 0rem 21px;
+    background-color: rgb(40, 35, 34);
+}
 audio, canvas, video {
   display: inline-block; }
 
@@ -21,9 +24,11 @@ a:focus {
 
 a:active, a:hover {
   outline: 0; }
-
+a{
+  text-decoration: none;
+}
 h1 {
-  font-size: 2em; 
+  font-size: 1.5em;
   text-align: center;}
 
 abbr[title] {
@@ -114,7 +119,8 @@ table {
 
 body, figure {
   margin: 0;
-  background-color:rgb(27, 27, 27); }
+  background-image: linear-gradient(#201413, #ca714e);
+  background-attachment: fixed; }
 
 legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
@@ -139,6 +145,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: revert;
+  margin-bottom: revert;
    }
    .welcome {
     color: white;
@@ -151,11 +159,25 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     margin-left: auto;
     margin-right: auto;
      }
+     .welcome1{
+      color: white;
+      font-family: "Open Sans", sans-serif,bold;
+      width: 80%;
+      margin: 0 auto;
+      margin-left: auto;
+      top: 20px;
+      font-weight: lighter;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      top: 211px;
+     }
    .article {
     color: white;
     font-family: "Open Sans", sans-serif,bold;
     width: 90%;
-    font-size: 30px;
+    font-size: 15px;
     margin: 0 auto;
     font-weight: lighter;
     text-align: center;
@@ -173,6 +195,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
      
     
        }
+       .logo-s{
+         margin: auto;
+         text-align: center;
+         position: inherit;
+         height: auto;
+       }
 .questions p {
  
   font-size: 1.3em; }
@@ -189,10 +217,18 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   list-style-type: none; }
   .questions ul li {
     padding: 10px;
-    background: #ececec;
-    margin: 15px 0;
-    position: relative;
-    cursor: pointer; }
+
+background: #392a2a;
+
+margin: 9px 0;
+
+position: relative;
+
+cursor: pointer;
+
+color: #fbfbfa;
+
+font-size: 16px; }
     .questions ul li:hover {
       background: rgb(163, 160, 160); }
 
@@ -201,14 +237,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .details .detail .d {
   font-weight: bold;
 }
-body {background-image: linear-gradient(to right, #310909, #1b1217);
-  background-attachment: fixed;}
+
 
 img {
-position: relative;
+/* position: relative; */
 top: 100px;
-height: 110px;
-width: 110px;
+height: 93px;
+width: 85px;
 text-align: center;
 justify-content: center;
 align-items: center;
@@ -220,12 +255,16 @@ font-family: 'Wendell';
 font-style: normal;}
 t2{
   position: relative;
-  font-family: 'Wendell';
+  font-family: "Open Sans", sans-serif,bold;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   top:120px;
   text-align: center;
   border-radius: 0%;
+}
+.introo{
+  border-radius: 15px;
+  height: 100%;
 }
 .intro{
 
@@ -299,12 +338,12 @@ border-radius: 4px;
 }
 
 .logo {
-font-size: 15px;
-height: 5px;
-width: 5px;
 
-/* background-image: url("src/img/Escape_Sorbonne.png"); */
-/* font-weight: bold; */
+font-size: 15px;
+height: 35px;
+width: 35px;
+position: initial;
+border-radius: 4px;
 }
 
 .header a:hover {
@@ -333,7 +372,7 @@ float: none;
 }
 }
 .t{
-	color: rgb(29, 10, 10);
+	color: rgb(38, 30, 30);
   font-family: "Open Sans", sans-serif;
   /* width: 80%; */
   margin: 0 auto;
@@ -351,31 +390,67 @@ float: none;
     max-width: 50%;
   }
   .but {
-    background-color: rgb(172, 131, 115);
-  border: none;
-  color: white;
+    background-color: rgb(255, 233, 224);
+    border: none;
+    color: #554b4b;
   padding: 10px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 12px;
+  margin: 13px 2px;
   cursor: pointer;
      }
 
-.button4 {border-radius: 12px;}
+.button4 {border-radius: 26px;}
 #rcorners2 {
   border-radius: 25px;
-  /* background-image: linear-gradient(to top, #8b6060, #471818); */
-  border: 1px solid rgb(110, 66, 66);
+  background-color: #352929;
+  border: 1px solid rgb(115, 111, 111);
   padding: auto; 
-  width: auto;
+  width: 71%;
   height: auto;  
   /* margin-left: auto;
   margin-right: auto; */
   margin : 0 auto;
   text-align: center;
   /* vertical-align: middle; */
+}
+#information{
+  border-radius: 25px;
+  background-color: #352929;
+  border: 1px solid rgb(115, 111, 111);
+  padding: auto;
+  width: 82%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+#corner{
+  padding: auto; 
+  width: 71%;
+  height: auto;  
+  margin : 0 auto;
+  text-align: center;
+ 
+}
+#corner1{
+  border-radius: 25px;
+  border: 1px solid rgb(119, 65, 48);
+  padding: 11px;
+  width: 91%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+#corner2{
+  padding: auto; 
+  width: 71%;
+  height: auto;  
+  margin : 0 auto;
+  text-align: center;
 }
 .form_ins {
   padding: 40px;
@@ -386,3 +461,121 @@ float: none;
 #form_1{
  padding-bottom: 50px;
 }
+.store {
+  width: 100%;
+  min-height: 30rem;
+  
+  background-size: cover;
+}
+.add-flex {
+  flex: 1;
+}
+.banner-right {
+  text-align: center;
+}
+.ace {
+  width: 100%;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("src/img/DSio3SYXkAAvTrP.jpg") center;
+  background-size: cover;
+}
+.between-sec {
+  background-attachment: fixed;
+}
+.dot {
+  height: 70px;
+  width: 70px;
+  background-color: #392a2a;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+ 
+  border: 1px solid rgb(115, 111, 111);
+}
+  .point{
+    color: white;
+    font-family: "Open Sans", sans-serif,bold;
+    width: 91%;
+    font-size: 17px;
+    margin: 15px auto;
+    font-weight: lighter;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+     }
+  .tableau{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+    .img-reponse{
+      position: initial;
+      width: auto;
+    }
+
+    .custom-box {
+      border: 2px solid grey;
+      text-align: center;
+      padding: 10px;
+      width: fit-content;
+      background-color: white;
+      margin: auto;
+  }
+  .container {
+    position: relative;
+    /* width: 50%;*/
+    margin: 13px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(87, 47, 21, 0.575);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  text {
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 85%;
+  }
+  .codex_elem{
+    height: 110px;
+    width: 82px;
+  }
+  
+  .dummy{
+	
+    padding: 15px;
+    background: #F2F5F7;
+    border: 1px solid #EAEFF2;
+    margin-bottom: 25px;
+  }
+  .dummy p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.08em;
+  }

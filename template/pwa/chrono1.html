@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <title>Escape Sorbonne</title>
+        <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/game.css"> -->
+	<link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+	<header>
+		<h1 class="float-l">
+		  <a href="index.html"><img action="index.html"class="logo" src="src/img/E_S.png">
+		  </a>
+		   </h1>
+			
+		<input type="checkbox" id="control-nav" />
+		<label for="control-nav" class="control-nav"></label>
+		<label for="control-nav" class="control-nav-close"></label>
+  
+		<nav class="float-r">
+		  <ul class="list-auto">
+			<li>
+			  <a href="#Chaves" title="Chaves">Codex</a>
+			</li>
+			<li>
+			  <a href="#Chiquinha" title="Chiquinha">Scores</a>
+			</li>
+			<li>
+			  <a href="#Chiquinha" title="Chiquinha">Mon compte</a>
+			</li>
+			<li>
+			  <a href="#Seu-Madruga" title="Seu Madruga">A propos</a>
+			</li>
+			<li>
+			  <a href="deconnexion.php" title="Quico">deconnexion</a>
+			</li>
+		  </ul>
+		</nav>
+	  </header>
+    
+    <div>
+      <h4 class="quiz">Mode chronométré</h4>   <br> 
+    <h2 class="welcome">COMMENÇONS ! </h2>  
+	<div class="container">
+		<div id="loader"></div>
+		<div id="game" class="justify-center flex-column hidden">
+		  <div id="hud">
+			
+			<span class="dot"> <div id="hud-item">
+				<p class="point">
+				  Score
+				</p>
+				<h1 class="point" id="score">
+				  0
+				</h1>
+			  </div></span>
+			  <div id="hud-item">
+				<p id="progressText" class="hud-prefix">
+				  Question
+				</p>
+				<div id="progressBar">
+				  <div id="progressBarFull"></div>
+				</div>
+			  </div>
+		  </div><br><br>
+
+		  <h2 id="question" class="quiz"></h2>
+		  <div class="choice-container">
+			<p class="choice-prefix">A</p>
+			<p class="choice-text" data-number="1"></p>
+		  </div>
+		  <div class="choice-container">
+			<p class="choice-prefix">B</p>
+			<p class="choice-text" data-number="2"></p>
+		  </div>
+		  <div class="choice-container">
+			<p class="choice-prefix">C</p>
+			<p class="choice-text" data-number="3"></p>
+		  </div>
+		  <div class="choice-container">
+			<p class="choice-prefix">D</p>
+			<p class="choice-text" data-number="4"></p>
+		  </div>
+		</div>
+	  </div>
+	  <div id="article">  
+		<div id="information"><img class="image"src="src/img/robert-de-sorbon.jpg"><p class="article"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p> 
+		</div><br>
+		<button id="togg"class="but button4 text-uppercase"> Prochaine enigme </button>
+		</div>
+	  <script src="js/game.js"></script>
+</body>
+
+</html>
