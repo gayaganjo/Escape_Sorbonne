@@ -16,12 +16,21 @@ escapesorbonne:HasIndice a rdf:Property ;
    vs:term_status "experimental" .
 
 escapesorbonne:Classe a rdf:Property ; 
-   rdfs:label "classe" ; 
+   rdfs:label "Classe" ; 
    rdfs:domain o:Resource ; 
    vs:term_status "experimental" .
 
-
- escapesorbonne:joueur a rdf:Property ; 
+ escapesorbonne:Joueur a rdfs:Class ; 
    rdfs:label "joueur" ; 
+   rdfs:domain o:Resource ; 
+   vs:term_status "experimental" .
+
+ escapesorbonne:Question a rdfs:Class ; 
+   rdfs:label "Question" ; 
+   rdfs:domain o:Resource ; 
+   vs:term_status "experimental" .
+
+ escapesorbonne:Réponse a rdfs:Class ; 
+   rdfs:label "Réponse" ; 
    rdfs:domain o:Resource ; 
    vs:term_status "experimental" .
