@@ -1,41 +1,94 @@
 {
     "response_code": 0,
     "results": [
-        {
-            "category": "Science: Computers",
-            "type": "multiple",
-            "difficulty": "easy",
-            "question": "Qui est le fondateur de la Sorbonne ?",
+        {   "num": 1,
+            "question": "Pour commencer, nous devons savoir jusqu’où remonter. Je propose de revenir en 2020 et de chercher sa date de fondation. Pour cela nous devons retrouver le nom d’un de ses fondateurs.",
             "correct_answer": "Robert de Sorbon",
             "incorrect_answers": [
-                "Richelieu",
-                "<img class='img-reponse' src='http://localhost/Escape_Sorbonne/src/img/sorbonne.jpg >",
-                "Saint louis"
+                "Louis de Sorbonne ",
+                "Philippe de Sorbon",
+                "Louis le Sorbonnais"
             ]
         },
-        {
-            "category": "Science: Computers",
-            "type": "multiple",
-            "difficulty": "easy",
-            "question": "In any programming language, what is the most common way to iterate through an array?",
-            "correct_answer": "&#039;For&#039; loops",
+        {   
+            "num": 2,
+            "question": "Nous avons maintenant le nom d’un des fondateurs, il nous reste plus qu’à trouver la date de fondation de la Sorbonne.",
+            "correct_answer": "1253",
             "incorrect_answers": [
-                "&#039;If&#039; Statements",
-                "&#039;Do-while&#039; loops",
-                "&#039;While&#039; loops"
+                "1263",
+                "1363",
+                "1347"
             ]
         },
         
         {
-            "category": "Science: Computers",
-            "type": "multiple",
-            "difficulty": "easy",
-            "question": "qui a fait ce lieu, sachant que le fondateur lui meme a participer a construire ce dernier, du coup ?",
-            "correct_answer": "&#039;For&#039; loops",
+            "num": "3",
+            "question": "La Sorbonne date donc du Moyen-Âge et nous pouvons supposer qu’elle ne ressemblait pas à celle de 2020 à laquelle nous sommes revenus. D’ailleurs, les tracés en double pointillé blanc situé au centre de la Cour d’Honneur correspondent à la chapelle primitive, mais si nous savions quand a-t-elle été détruite, nous pourrions sûrement daté une autre période de construction et retrouver les plans.",
+            "correct_answer": "1635",
             "incorrect_answers": [
-                "&#039;If&#039; Statements",
-                "&#039;Do-while&#039; loops",
-                "&#039;While&#039; loops"
+                "1430",
+                "1522",
+                "1622"
+            ]
+        },
+        {   
+            "num": "4",
+            "question": "Le 5 décembre 1793, des révolutionnaires saccagèrent un tombeau qui se trouvait dans la nouvelle chapelle, l'exhumèrent et décapitèrent son cadavre… à qui appartenait-il ?",
+            "correct_answer": "Cardinal de Richelieu",
+            "incorrect_answers": [
+                "Robert de Sorbon",
+                "Napoléon bonaparte",
+                "Victor Hugo"
+            ]
+        },
+        {   
+            "num": "5",
+            "question": "Au XIXe siècle c’est le temps des grands travaux sous la Troisième République en Sorbonne. Qui réorganisa l’ensemble du système d’enseignement supérieur français, baptisé Université impériale ?",
+            "correct_answer": "Napoléon Bonaparte",
+            "incorrect_answers": [
+                "Jules Ferry",
+                "Louis Pasteur",
+                "Octave Gréard"
+            ]
+        },
+        {   
+            "num": "6",
+            "question": "La reconstruction des bâtiments du XVIIe siècle, trop exigus et incommodes, fut finalement réalisée sous l’impulsion de ?",
+            "correct_answer": "Jules Ferry",
+            "incorrect_answers": [
+                "Octave Gréard",
+                "Victor Hugo",
+                "Louis Pasteur"
+            ]
+        },
+        {   
+            "num": "7",
+            "question": "En 1906 une femme devient la première femme enseignante à la Sorbonne. De qui s’agit-il ?",
+            "correct_answer": "Marie Curie",
+            "incorrect_answers": [
+                "Simone de Beauvoir",
+                "Simone Weil",
+                "Jacqueline de Romilly"
+            ]
+        },
+        {   
+            "num": "8",
+            "question": "En quelle année l’Université de Paris éclate-t-elle en 13 universités Parisiennes ?",
+            "correct_answer": "1968",
+            "incorrect_answers": [
+                "1918",
+                "1939",
+                "1945"
+            ]
+        },
+        {   
+            "num": "9",
+            "question": "En 2020, la Sorbonne est ?",
+            "correct_answer": "Un bâtiment",
+            "incorrect_answers": [
+                "Un lycée",
+                "Une université",
+                "un collège"
             ]
         }
     ]

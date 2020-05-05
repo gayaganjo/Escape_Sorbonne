@@ -7,7 +7,7 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-  margin:-1px; padding:0; border:0; background:transparent;
+  margin:auto; padding:0; border:0; background:transparent;
   /*vertical-align: baseline;*/
 }
 
@@ -35,7 +35,7 @@ header {
   opacity: 0.9;
   z-index: 5;
   height: 41px;
-  background-color: rgb(47, 29, 22);
+  /* background-color: #200c03; */
 }
 
 header h1 {
@@ -98,7 +98,7 @@ section img {
 }
 
 section p {
-  padding: 0 0 20px;
+  padding:1px 37px 22px;
 }
 
 .highlights {
@@ -275,9 +275,9 @@ input[id*="modal_"]:checked + div.modal .modal-content {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 250px;
+    width: 83%;
     border-left: 1px solid #ccc;
-    background: rgb(23, 12, 9);
+    background: rgb(1, 2, 21);
     overflow-x: auto;
     z-index: 2;
     -webkit-transition: all 500ms ease;
@@ -313,7 +313,7 @@ input[id*="modal_"]:checked + div.modal .modal-content {
     display: block;
     width: 38px;
     padding: 10px 0;
-    border: solid  #797979;
+    border: solid  #ffffff;
         border-top-width: medium;
         border-right-width: medium;
         border-bottom-width: medium;
@@ -327,7 +327,8 @@ input[id*="modal_"]:checked + div.modal .modal-content {
     content: "";
     display: block;
     height: 2px;
-    background: #797979;
+    background: #ffffff;
+    box-shadow: 0 0.0rem 0.4rem 0.5px #89b4f5;
   }
 
   .control-nav-close {

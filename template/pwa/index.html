@@ -30,20 +30,106 @@
 
     <title>Escape Sorbonne</title>
 </head>
-<body>
+<body class="BG">
 <div class="intro"><img class="introo" src="src/img/Escape_Sorbon.png"><br><t2>Escape Sorbonne</t2></div>
 <div class="saisi">
-        <h1 class="quiz">Bienvenue dans Escape Sorbone</h1><br>
+        <!-- <h1 class="quiz">Bienvenue dans le jeu sur mobile</br>Escape Sorbone</h1><br> -->
    
       
-            <div class="quiz">
-                <br><form action="identification.html"><button class="but button4" type="submit">Connexion</button><br></form>
+    
+            
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  
+                    <!-- <img src="src/img/explosion.jpg" style="width:100%"> -->
+                    <div class="text" style="margin: 51% auto;font-size: 94%;padding: 16%;">Bienvenue dans le jeu sur mobile</br>Escape Sorbone 
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                  
+                  <!-- <img src="src/img/explosion.jpg" style="width:100%"> -->
+                  <div class="text">En 2075, dû à une pandémie l’économie s’effondre et déclenche une 4ème Guerre Mondiale.
+                    De nombreux bombardements ont lieu à travers le monde ce qui provoque une destruction massive du patrimoine de l’Humanité.</br><br>
+                    Vous faites partie d’une Organisation Non Gouvernementale </br><br> en charge de la restauration du patrimoine dans le but de le transmettre aux générations futures.
+                   </div>
+                </div>
                 
-                <br><form action="insciprtion.php"><button class="but button4" type="submit" >inscription</button></form>
-            </div>
-
+                <div class="mySlides fade">
+<!--                   
+                  <img src="src/img/logo.png" style="width:100%"> -->
+                  <div class="text"> Votre mission est de récupérer les plans de la Sorbonne afin que vos collègues architecte puissent la reconstruire après la guerre. </br><br>
+                    Vous remonterez dans le temps avec votre robot qui ouvrira les portails spatio-temporels et qui pourra vous aider dans la résolution des énigmes grâce à sa puissance de calcul quantique</div>
+                </div>
+                
+                <div class="mySlides fade">
+                 
+                  <!-- <img src="src/img/robert-de-sorbon.jpg" style="width:100%"> -->
+                 
+                  <div class="text">Mission</br>Des terroristes cherchent à détruire ces documents du passé, vous avez une heure pour récupérer les plans avant qu’il ne soit trop tard. D’autres collègues ont essayé avant vous, essayez d’obtenir un meilleur score !
+                    <br><form action="identification.html"><button class="but button4" type="submit">Connexion</button><br></form>
+                    
+                    <br><form action="inscription.html"><button class="but button4" type="submit" >inscription</button></form>
+                    <br>Promenade</br>Vous retournez dans le passé quand vous voulez pour résoudre les énigmes à votre rythme afin de découvrir la genèse de la Sorbonne et récupérer les plans pour votre ONG.
+                    <br><form action="navigator1.html"><button class="but button4" type="submit" >Jouer !</button></form>
+                </div>
+                
+                    
+                
+                </div>
+                
+                
+                
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center; display: inline-block;">
+                  <a class="prev" onclick="plusSlides(-1)" style="left: 0%;">&#10094;</a>
+                  <span class="dott" onclick="currentSlide(1)"></span> 
+                  <span class="dott" onclick="currentSlide(2)"></span> 
+                  <span class="dott" onclick="currentSlide(3)"></span> 
+                  <span class="dott" onclick="currentSlide(4)"></span>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                
+                
+                
 </div>
-
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+   
+   
+    function plusSlides(n) {
+       
+      showSlides(slideIndex += n);
+        
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dott");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+    
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    
+      
+    }
+    </script>
 <script type="text/javascript">
 window.addEventListener("load",function(){
     const intro = document.querySelector(".intro");

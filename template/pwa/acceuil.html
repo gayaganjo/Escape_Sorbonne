@@ -22,67 +22,59 @@
                 <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
        <meta name="msapplication-TileColor" content="#FFFFFF">
 </head>
-<body>
-<header>
-      <h1 class="float-l">
-        <a href="index.html"><img action="index.html"class="logo" src="src/img/E_S.png">
-        </a>
-         </h1>
-          
-      <input type="checkbox" id="control-nav" />
-      <label for="control-nav" class="control-nav"></label>
-      <label for="control-nav" class="control-nav-close"></label>
+<body class="bg_4">
 
-      <nav class="float-r">
-        <ul class="list-auto">
-          <li>
-            <a href="#Chaves" title="Chaves">Codex</a>
-          </li>
-          <li>
-            <a href="#Chiquinha" title="Chiquinha">Scores</a>
-          </li>
-          <li>
-            <a href="#Chiquinha" title="Chiquinha">Mon compte</a>
-          </li>
-          <li>
-            <a href="#Seu-Madruga" title="Seu Madruga">A propos</a>
-          </li>
-          <li>
-            <a href="deconnexion.php" title="Quico">deconnexion</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    
-    
-    <div id="accueil">
-    <h2 class="welcome">Bienvenue Gaya </h2> <br>
-    <h4 class="quiz">Choisir un mode</h2>   <br>     
+    <div style="background-color: #8c266475;    height: 100%;">
+      <!-- <img src="src/img/XD2.jpg"> -->
+      <header>
+        <h1 class="float-l">
+          <a href="index.html"><img action="index.html"class="logo" src="src/img/E_S.png">
+          </a>
+           </h1>
+            
+        <input type="checkbox" id="control-nav" />
+        <label for="control-nav" class="control-nav"></label>
+        <label for="control-nav" class="control-nav-close"></label>
+  
+        <nav class="float-r">
+          <ul class="list-auto">
+            
+            <li>
+              <a href="#Chiquinha" title="Chiquinha">Scores</a>
+            </li>
+            <li>
+              <a href="#Chiquinha" title="Chiquinha">Mon compte</a>
+            </li>
+            <li>
+              <a href="a_propos.html" title="Seu Madruga">A propos</a>
+            </li>
+            <li>
+              <a href="deconnexion.php" title="Quico">deconnexion</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <h5 class="welcome" >Bienvenue Gaya </h5>
     <div id="corner1">
-    <form id="corner"action="promenade.html" ><button onclick="myFunction()" id="prom" class="but button4 text-uppercase">Promenade</button></form>
+    <p class="quiz">En 2075, dû à une pandémie l’économie s’effondre et déclenche une 4ème Guerre Mondiale.
+       De nombreux bombardements ont lieu à travers le monde ce qui provoque une destruction massive du patrimoine de l’Humanité.
+       Vous faites partie d’une Organisation Non Gouvernementale en charge de la restauration du patrimoine dans le but de le transmettre aux générations futures.
+       Votre mission est de récupérer les plans de la Sorbonne afin que vos collègues architecte puissent la reconstruire après la guerre. 
+       Vous remonterez dans le temps avec votre robot qui ouvrira les portails spatio-temporels et qui pourra vous aider dans la résolution des énigmes grâce à sa puissance de calcul quantique</p>  
+       <form id="corner" action="modes.html"><button class="but button4 text-uppercase"> C'est parti !  </button></form>
+    <!-- <div id="corner2">
+    
+    
+      <form id="corner"action="prom1.html" ><button onclick="myFunction()" id="prom" class="but button4 text-uppercase">Promenade</button></form>
       <img class="logo-s" src="src/img/man.png">
-      <p class="article"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p> </div><br><br>
-    <div  id="corner1">
-      <form id="corner" action="chronométré.html"><button class="but button4 text-uppercase"> Chronométré  </button></form><img class="logo-s"src="src/img/chroono.png">
-      <p class="article"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   </p> </div><br>
-    </div>             
-    <h2 class="welcome1" id="promen">mode promenade</h2>
-   
-   <script type="text/javascript">
-    const accueil = document.getElementById('accueil');
-    const prom = document.getElementById('prom');
-    const promen = document.getElementById('promen');
-    promen.style.display="none";
-    // prom.onclick=function(){
-    //
-    //   accueil.style.display="none"; //je voulais executer cette fonction pendant 2 secondes puis aller a la prochaine page 
-    //   promen.style.display="block"; //
-    // 
-    // }
-    function myFunction() {
-     location.assign("promenade.html");//la ligne qui nous menne vers la prochaine page
-        }
-    </script>
+      <p class="article"> Vous retournez dans le passé quand vous voulez pour résoudre les énigmes à votre rythme afin de découvrir la genèse de la Sorbonne et récupérer les plans pour votre ONG.
+      </p> </div>
+    <div  id="corner2">
+      <form id="corner" action="chrono1.html"><button class="but button4 text-uppercase"> Chronométré  </button></form><img class="logo-s"src="src/img/chroono.png" style="margin: -36% auto;">
+      <p class="article"> Des terroristes cherchent à détruire ces documents du passé, vous avez une heure pour récupérer les plans avant qu’il ne soit trop tard. D’autres collègues ont essayé avant vous, essayez d’obtenir un meilleur score !
+      </p> </div>
+    </div>              -->
+  </div>
 </body>
 
 </html>

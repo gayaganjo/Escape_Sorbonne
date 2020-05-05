@@ -19,7 +19,7 @@
         <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
         <meta name="msapplication-TileColor" content="#FFFFFF">
         <title>Escape Sorbonne</title>
-    
+        
 </head>
 <body>
 <header>
@@ -47,6 +47,9 @@
             <a href="#Seu-Madruga" title="Seu Madruga">A propos</a>
           </li>
           <li>
+            <a href="prom1.html" title="Seu Madruga">Retour</a>
+          </li>
+          <li>
             <a href="deconnexion.php" title="Quico">deconnexion</a>
           </li>
         </ul>
@@ -59,11 +62,52 @@
     <h4 class="quiz">"pseudo"</h4>   <br>     
     
     <h4 class="quiz">"tu a collecté 0/10 éléments historique de la Sorbonne"</h4> 
-    <div class="container">
+    <div >
+      <div class="container_dev" id="code2" onclick="myFunction()" id="myBtn">
+          <img src="src/img/363px-Chapelle_de_la_sorbonne_interior.jpg" class="image">
+          <p class ="quiz" style="color: rgb(158, 238, 211);">À sa création, la Sorbonne était l’un des collèges du Moyen Âge <span id="dots">...</span><span id="more">de l’université de Paris dont le fondateur s’appelait Robert de Sorbon et était le confesseur du roi Louis Philippe. </span></p>
+          <button onclick="myFunction()" id="myBtn" ><img src="src/img/down.png" class="plus"></button>
+      </div>
+    </div>
+    <div class="container" id="code1">
         <img src="src/img/sorbonne.jpg" class="image">
+        
+        <div class="overlay">
+          
+          <text><img  src="src/img/lock.png"><br>Moyen Age</text>
+        </div>
+        <!-- <span id="dots"></span><span id="more">
+          <div class="elem">
+            <img src="src/img/SRobert.png" class="imag">
+            <img src="src/img/explosion.jpg" class="imag">
+            <img src="src/img/XD6.png"class="imag" >
+          </div>
+        </span>
+          <button onclick="myFunction()" id="myBtn" ><img src="src/img/down.png" class="plus"></button> 
+      </div>-->
+    </div>
+   
+    <div class="container" id="code555">
+      <img src="src/img/363px-Chapelle_de_la_sorbonne_interior.jpg" class="image">
+      <div class="overlay">
+        <!-- <div class="text">Hello World</div> -->
+        <text><img src="src/img/lock.png"><br>Renaissance</text>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+        <img src="src/img/Péristyle_Sorbonne_paysage_1_BD-690x461.jpg" class="image">
         <div class="overlay">
           <!-- <div class="text">Hello World</div> -->
-          <text><img  src="src/img/lock.png"><br>1ére entré du codex</text>
+          <text><img src="src/img/lock.png"><br>Révolution Française </text>
+        </div>
+      </div>
+    
+    <div class="container">
+        <img src="src/img/det_LC19_PARIS_MC_0686.jpg" class="image">
+        <div class="overlay">
+          <!-- <div class="text">Hello World</div> -->
+          <text><img src="src/img/lock.png"><br>Premier & Second Empire</text>
         </div>
       </div>
     </div>
@@ -71,31 +115,7 @@
         <img src="src/img/sorbonne.jpg" class="image">
         <div class="overlay">
           <!-- <div class="text">Hello World</div> -->
-          <text><img src="src/img/lock.png"><br>2éme entré du codex</text>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-        <img src="src/img/sorbonne.jpg" class="image">
-        <div class="overlay">
-          <!-- <div class="text">Hello World</div> -->
-          <text><img src="src/img/lock.png"><br>3éme entré du codex </text>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-        <img src="src/img/sorbonne.jpg" class="image">
-        <div class="overlay">
-          <!-- <div class="text">Hello World</div> -->
-          <text><img src="src/img/lock.png"><br>4éme entré du codex</text>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-        <img src="src/img/sorbonne.jpg" class="image">
-        <div class="overlay">
-          <!-- <div class="text">Hello World</div> -->
-          <text ><img src="src/img/lock.png" ><br>5éme entré du codex</text>
+          <text ><img src="src/img/lock.png" ><br>Moderne</text>
         </div>
       </div>
     </div>
@@ -103,27 +123,22 @@
         <img src="src/img/sorbonne.jpg" class="image">
         <div class="overlay">
           <!-- <div class="text">Hello World</div> -->
-          <text><img src="src/img/lock.png"><br>4éme entré du codex</text>
+          <text><img src="src/img/lock.png"><br>Contemporaine</text>
         </div>
       </div>
     </div>
-    <!-- <div class="dummy">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, vel fuga rerum asperiores quos qui exercitationem et expedita libero corrupti. Placeat tempore aspernatur sapiente non consectetur labore corporis ipsum iste.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, vel fuga rerum asperiores quos qui exercitationem et expedita libero corrupti. Placeat tempore aspernatur sapiente non consectetur labore corporis ipsum iste.
-        </p>
-    </div>
     
-    <script src="src/readMoreJS.min.js"></script>
-	<script>
-		$readMoreJS.init({
-			target: '.dummy p',
-			numOfWords: 50,
-			toggle: true,
-			moreLink: 'read more ...',
-			lessLink: 'read less'
-		});
-	</script> -->
+
+    <script> 
+      var isShown = localStorage.getItem('showit');
+      
+      if(isShown && isShown==2){
+        document.getElementById('code555').style.display='none';
+        
+        }else{
+          document.getElementById('code555').style.display='block';
+        }</script>
+  <script src="js/quiz.js"></script>
 </body>
 
 </html>
