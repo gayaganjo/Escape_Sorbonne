@@ -198,14 +198,14 @@ font-size: 1.2rem;
        .article3 {
         color: white;
         font-family: "Open Sans", sans-serif,bold;
-        width: 90%;
-        font-size: 21px;
+        width: 100%;
+        font-size: 86%;
         margin: 0 auto;
         font-weight: lighter;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        padding: 10px;
+        padding: 0%;
          }
          .article4 {
             color: white;
@@ -460,7 +460,7 @@ float: none;
   border-radius: 25px;
   background-color: #514f6d96;
   border: 1px solid rgb(218, 220, 221);
-  padding: 13px;
+  padding: 1%;
   width: auto;
   height: auto;
   margin-left: auto;
