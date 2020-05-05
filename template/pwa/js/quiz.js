@@ -65,10 +65,8 @@ quiz.engine = function(e) {
 	if (quiz.thisQ <= quiz.quizLength) {
 		$('.q' + quiz.thisQ).show();
 	} else {
-		$('.answers').show();
-		for (i = 0; i <= quiz.quizLength; i++) {
-			$('.a' + i).html("A: " + quiz.answers[i]);
-		}
+		return window.location.assign("fin_promenade.html");
+
 	}
 	 
 
@@ -143,7 +141,7 @@ function myFunction() {
 	$('#hello2').hide();
 	function bigImg(robot) {
 		
-		// $('#hello2').show(); 
+		$('#hello2').show(); 
 		$('#hello').hide(); 
 		$('#hello1').hide(); 
 	  }

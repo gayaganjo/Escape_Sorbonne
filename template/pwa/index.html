@@ -53,6 +53,10 @@
                     De nombreux bombardements ont lieu à travers le monde ce qui provoque une destruction massive du patrimoine de l’Humanité.</br><br>
                     Vous faites partie d’une Organisation Non Gouvernementale </br><br> en charge de la restauration du patrimoine dans le but de le transmettre aux générations futures.
                    </div>
+                   <audio autoplay id="aud1" src="src/audio/audio1.ogg" type="=audio/ogg">
+                   </audio>
+                   <audio autoplay id="aud2" src="src/audio/audio2.ogg" type="=audio/ogg">
+                   </audio>
                 </div>
                 
                 <div class="mySlides fade">
@@ -99,8 +103,10 @@
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);
-   
-   
+    var aud1 = document.getElementById("aud1");
+    var aud2 = document.getElementById("aud2");
+    aud1.pause();
+    aud2.pause();
     function plusSlides(n) {
        
       showSlides(slideIndex += n);
@@ -126,9 +132,20 @@
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
-    
+    if(n==2){
+      aud1.play();
+     
+    }else if(n==3){
+      aud1.pause();
+      aud2.play();
+    }else if(n==4){
+      aud2.pause();
+    }
       
     }
+    
+    
+      
     </script>
 <script type="text/javascript">
 window.addEventListener("load",function(){
