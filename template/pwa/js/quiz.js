@@ -143,7 +143,7 @@ function myFunction() {
 	$('#hello2').hide();
 	function bigImg(robot) {
 		
-		$('#hello2').show(); 
+		// $('#hello2').show(); 
 		$('#hello').hide(); 
 		$('#hello1').hide(); 
 	  }
@@ -182,7 +182,6 @@ function myFunction() {
 			}
 			if(quiz.thisQ ==3){
 				$('#indice4').show();
-				$('.questions').hide();
 			}
 			if(quiz.thisQ==4){
 				timesClicked++;
@@ -211,7 +210,6 @@ function myFunction() {
 				timesClicked++;
 				if (timesClicked%2==0){
 					$('#indice10').hide();
-					$('.questions').hide();
 					$('#indice11').show();
 				}else{
 					$('#indice11').hide();

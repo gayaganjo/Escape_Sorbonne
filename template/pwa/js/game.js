@@ -15,7 +15,7 @@ let togg = document.getElementById("togg");
 article.style.display="none";
 
 let questions = [];
-fetch("http://localhost/Escape_Sorbonne/template/pwa/js/questionss.json")
+fetch("https://gayaganjo.github.io/Escape_Sorbonne/template/pwa/js/questionss.json")
   .then(res => {
     return res.json();
   })
