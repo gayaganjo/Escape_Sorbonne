@@ -747,10 +747,8 @@ grid-template-columns: 1fr 1fr;
 text-align: center;
 
 padding: 1rem 0;
-
-font-size: 1.8rem;
-
-color: var(--main-white);
+position: absolute;
+bottom: 0;
   }
   .talk {
     border-radius: 25px;
