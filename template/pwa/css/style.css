@@ -199,7 +199,7 @@ font-size: 1.2rem;
         color: white;
         font-family: "Open Sans", sans-serif,bold;
         width: 100%;
-        font-size: 86%;
+        font-size: 60%;
         margin: 0 auto;
         font-weight: lighter;
         text-align: center;
@@ -738,10 +738,17 @@ border-radius: 12px;
    background-color: #8c266475;
   }
   .perso{
-    position: absolute;
-bottom: 9px;
+    width: 100%;
+
 display: flex;
-width: auto;
+
+grid-template-columns: 1fr 1fr;
+
+text-align: center;
+
+padding: 1rem 0;
+position: absolute;
+bottom: 0;
   }
   .talk {
     border-radius: 25px;
@@ -757,7 +764,7 @@ width: auto;
     /* animation-duration: 500ms; */
     animation:talking 500ms;
     /* opacity: 0.9; */
-   
+    font-size: 59%;
     
   }
   
@@ -781,8 +788,7 @@ width: auto;
       text-align: center;
       /* animation-duration: 500ms; */
       animation: talking1 500ms;
-      /* opacity: 0.9; */
-      /* animation-delay: 4s; */
+      font-size: 59%;
     }
     @keyframes talking1 {
       0% {font-size: 1px;width: auto;
@@ -803,12 +809,9 @@ width: auto;
       text-align: center;
       /* animation-duration: 500ms; */
       animation: talking1 500ms;
-      /* opacity: 0.9; */
-      /* animation-delay: 4s; */
+      font-size: 59%;
     }
-    #accueil{
-
-    }
+    
     .elem{
       display: flow-root;
       text-align: center;

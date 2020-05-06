@@ -76,7 +76,9 @@
                         <p class="article4"> Le codex est l'endroit où tu pourras retrouver tout le contenu historique
                             que tu va pouvoir collecter au fil du jeu </p> 
                     </div>
-                    <br><form action="prom1.html"style="margin-bottom: -7%;"><button class="but button4" type="submit" style="margin-bottom: -11%;" >C'est parti !</button></form>
+                    <audio autoplay id="blip" src="src/audio/blip.ogg" type="=audio/ogg">
+                    </audio>
+                    <br><form action="prom1.html"style="margin-bottom: -7%;"><button onclick="bliper()" class="but button4" type="submit" style="margin-bottom: -11%;" >C'est parti !</button></form>
                 </div>
                 
                 </div>
@@ -97,6 +99,11 @@
 	
   </div>
   <script>
+        var blip = document.getElementById("blip");
+    blip.pause();
+    function bliper(){
+      blip.play();
+    }
     var slideIndex = 1;
     showSlides(slideIndex);
    

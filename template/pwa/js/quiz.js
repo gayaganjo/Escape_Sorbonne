@@ -115,7 +115,9 @@ function myFunction() {
 	// }
 
 
-	
+	var borg = document.getElementById("borg");
+    borg.pause();
+
 	var result=document.getElementById("result");
 	var robot=document.getElementById("robot");
 	var commence=document.getElementById("commence");
@@ -153,6 +155,8 @@ function myFunction() {
 	  }
 	
 	function indice_of(indice1){
+		
+    	
 		indice1.style.display="none";
 		questions.style.display="block";
 	}
@@ -164,6 +168,7 @@ function myFunction() {
 	
 	var timesClicked = 0;
 		function indice(robot){
+			borg.play();
 			$('.result').hide();
 			if(quiz.thisQ==1){
 				timesClicked++;

@@ -57,6 +57,8 @@
                    </audio>
                    <audio autoplay id="aud2" src="src/audio/audio2.ogg" type="=audio/ogg">
                    </audio>
+                   <audio autoplay id="blip" src="src/audio/blip.ogg" type="=audio/ogg">
+                   </audio>
                 </div>
                 
                 <div class="mySlides fade">
@@ -71,11 +73,11 @@
                   <!-- <img src="src/img/robert-de-sorbon.jpg" style="width:100%"> -->
                  
                   <div class="text">Mission</br>Des terroristes cherchent à détruire ces documents du passé, vous avez une heure pour récupérer les plans avant qu’il ne soit trop tard. D’autres collègues ont essayé avant vous, essayez d’obtenir un meilleur score !
-                    <br><form action="identification.html"><button class="but button4" type="submit">Connexion</button><br></form>
+                    <br><form action="identification.html"><button class="but button4" onclick="bliper()" type="submit">Connexion</button><br></form>
                     
-                    <br><form action="inscription.html"><button class="but button4" type="submit" >inscription</button></form>
+                    <br><form action="inscription.html"><button class="but button4" onclick="bliper()" type="submit" >inscription</button></form>
                     <br>Promenade</br>Vous retournez dans le passé quand vous voulez pour résoudre les énigmes à votre rythme afin de découvrir la genèse de la Sorbonne et récupérer les plans pour votre ONG.
-                    <br><form action="navigator1.html"><button class="but button4" type="submit" >Jouer !</button></form>
+                    <br><form action="navigator1.html"><button class="but button4" onclick="bliper()" type="submit" >Jouer !</button></form>
                 </div>
                 
                     
@@ -105,8 +107,13 @@
     showSlides(slideIndex);
     var aud1 = document.getElementById("aud1");
     var aud2 = document.getElementById("aud2");
+    var blip = document.getElementById("blip");
     aud1.pause();
     aud2.pause();
+    blip.pause();
+    function bliper(){
+      blip.play();
+    }
     function plusSlides(n) {
        
       showSlides(slideIndex += n);
