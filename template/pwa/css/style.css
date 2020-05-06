@@ -199,7 +199,7 @@ font-size: 1.2rem;
         color: white;
         font-family: "Open Sans", sans-serif,bold;
         width: 100%;
-        font-size: 86%;
+        font-size: 60%;
         margin: 0 auto;
         font-weight: lighter;
         text-align: center;
@@ -766,7 +766,7 @@ color: var(--main-white);
     /* animation-duration: 500ms; */
     animation:talking 500ms;
     /* opacity: 0.9; */
-   
+    font-size: 59%;
     
   }
   
@@ -790,8 +790,7 @@ color: var(--main-white);
       text-align: center;
       /* animation-duration: 500ms; */
       animation: talking1 500ms;
-      /* opacity: 0.9; */
-      /* animation-delay: 4s; */
+      font-size: 59%;
     }
     @keyframes talking1 {
       0% {font-size: 1px;width: auto;
@@ -812,12 +811,9 @@ color: var(--main-white);
       text-align: center;
       /* animation-duration: 500ms; */
       animation: talking1 500ms;
-      /* opacity: 0.9; */
-      /* animation-delay: 4s; */
+      font-size: 59%;
     }
-    #accueil{
-
-    }
+    
     .elem{
       display: flow-root;
       text-align: center;
