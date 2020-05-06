@@ -738,10 +738,17 @@ border-radius: 12px;
    background-color: #8c266475;
   }
   .perso{
-    position: absolute;
-bottom: 9px;
+    width: 100%;
+
 display: flex;
-width: auto;
+
+grid-template-columns: 1fr 1fr;
+
+text-align: center;
+
+padding: 1rem 0;
+position: absolute;
+bottom: 0;
   }
   .talk {
     border-radius: 25px;
