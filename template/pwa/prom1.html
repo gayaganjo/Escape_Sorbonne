@@ -82,7 +82,7 @@
 			
 			<div class="question q1 ">
 				
-				<p class="quiz machin" style="position: relative;z-index: 1;font-size: 70%;">Pour commencer, nous devons savoir jusqu'où remonter, je propose de revenir en 2020 et de chercher sa date de fondation.<br> Pour cela nous devons retrouver le nom d'un de ses fondateurs. </p>
+				<p class="quiz machin" style="position: relative;z-index: 1;font-size: 70%;" id="Que1"> </p>
 				<ul>
 					<li>Louis de Sorbonne</li>
 					<li onclick="showorhide()">Robert de Sorbon</li>
@@ -91,7 +91,7 @@
 				</ul>
 			</div>
 			<div class="question q2">
-				<p class="quiz">Nous avons maintenant le nom d’un des fondateurs, il nous reste plus qu’à trouver la date de fondationde la Sorbonne.</p>
+				<p class="quiz" id="Que2"></p>
 				<ul>
 					<li>1253</li>
 					<li>1263</li>
@@ -100,7 +100,7 @@
 				</ul>
 			</div>
 			<div class="question q3">
-				<p class="quiz">La Sorbonne date donc du Moyen-Âge et nous pouvons supposer qu’elle ne ressemblait pas à celle de 2020 à laquelle nous sommes revenus. D’ailleurs, les tracés en double pointillé blanc situé au centre de la Cour d’Honneur correspondent à la chapelle primitive, mais si nous savions quand a-t-elle été détruite, nous pourrions sûrement daté une autre période de construction et retrouver les plans.</p>
+				<p class="quiz" id="Que3"></p>
 				<ul>
 					<li>1430</li>
 					<li>1522</li>
@@ -109,8 +109,7 @@
 				</ul>
 			</div>
 			<div class="question q4">
-				<p class="quiz">Le 5 décembre 1793, des révolutionnaires saccagèrent un tombeau qui se trouvait dans la nouvelle chapelle,
-					 l'exhumèrent et décapitèrent son cadavre… à qui appartenait-il ?
+				<p class="quiz" id="Que4">
 				</p>
 				<ul>
 					<li>Robert de Sorbon</li>
@@ -120,8 +119,7 @@
 				</ul>
 			</div>
 			<div class="question q5">
-				<p class="quiz">Au XIXe siècle c’est le temps des grands travaux sous la Troisième République en Sorbonne.
-					 Qui réorganisa l’ensemble du système d’enseignement supérieur français, baptisé Université impériale ? </p>
+				<p class="quiz" id="Que5"></p>
 				<ul>
 					<li>Napoléon Bonaparte</li>
 					<li>Jules Ferry</li>
@@ -130,8 +128,7 @@
 				</ul>
 			</div>
 			<div class="question q6">
-				<p class="quiz">La reconstruction des bâtiments du XVIIe siècle, trop exigus et incommodes, 
-					fut finalement réalisée sous l’impulsion de ?  </p>
+				<p class="quiz" id="Que6"> </p>
 				<ul>
 					<li>Octave Gréard</li>
 					<li>Jules Ferry</li>
@@ -140,7 +137,7 @@
 				</ul>
 			</div>
 			<div class="question q7">
-				<p class="quiz">En 1906 une femme devient la première femme enseignante à la Sorbonne. De qui s’agit-il ?
+				<p class="quiz" id="Que7">
 				</p>
 				<ul>
 					<li>Simone de Beauvoir</li>
@@ -150,7 +147,7 @@
 				</ul>
 			</div>
 			<div class="question q8">
-				<p class="quiz">En quelle année l’Université de Paris éclate-t-elle en 13 universités Parisiennes ?
+				<p class="quiz" id="Que8">
 				</p>
 				<ul>
 					<li>1918</li>
@@ -160,7 +157,7 @@
 				</ul>
 			</div>
 			<div class="question q9">
-				<p class="quiz">En 2020, la Sorbonne est ?
+				<p class="quiz" id="Que9">
 				</p>
 				<ul>
 					<li>Une université</li>
@@ -177,54 +174,56 @@
 		<img src="src/img/Bot.gif" id="robot" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="indice(this)">
 		<div class="talk" id="hello"><p>Bienvenue voyageur temporelle</p></div>
 		<div class="talk1" id="hello1"><p>je suis là pour vous aider !</p></div>
-		<!-- <div class="talk2" id="hello2" ><p>Besoin d'aide ? ⇫⇫⇫</p></div> -->
-		<div><p class="result index"></p></div>
+		
+			<div><p class="result index"></p></div>
+			
 			<div id="indice1" onclick="indice_of(this)" class="index">
-				<p class="article3">Son fondateur venait d’une commune française, située dans le département des Ardennes. 
+				<p class="article3" id="art1"> 
 				</p> 
 			</div>
 			<div id="indice2" onclick="indice_of(this)" class="index">
-				<p class="article3"> Son nom se trouve au milieu de la cour d’honneur.
+				<p class="article3"id="art2"> 
 				</p> 
 			</div>
 			<div id="indice3" onclick="indice_of(this)" class="index">
-				<p class="article3"> Sur la plaque de la cour d’honneur il est indiqué que la chapelle a été édifiée en 1326, mais Robert de Sorbon est décédé en 1274. Notre mission ne va pas être simple car des erreurs se sont disséminés au fil du temps.</p> 
+				<p class="article3"id="art3"> </p> 
 			</div>
 			<div id="indice4" onclick="indice_of(this)" class="index">
-				<p class="article3"> C’est un célèbre cardinal qui fit la commande d’un nouvel édifice</p> 
+				<p class="article3"id="art4"> </p> 
 			</div>
 			<div id="indice5" onclick="indice_of(this)" class="index">
-				<p class="article3">Rendons-nous dans le Hall des Amphithéâtres, l’un d’eux porte son nom.</p> 
+				<p class="article3"id="art5"></p> 
 			</div>
 			<div id="indice6" onclick="indice_of(this)" class="index">
-				<p class="article3">Il s’agit d’un des proviseurs de la Sorbonne.</p> 
+				<p class="article3"id="art6"></p> 
 			</div>
 			<div id="indice7" onclick="indice_of(this)" class="index">
-				<p class="article3">Il s’agit d’un empereur.</p> 
+				<p class="article3"id="art7"></p> 
 			</div>
 			<div id="indice8" onclick="indice_of(this)" class="index">
-				<p class="article3">Ça commença en 1806.</p> 
+				<p class="article3"id="art8"></p> 
 			</div>
 			<div id="indice9" onclick="indice_of(this)" class="index">
-				<p class="article3">Il s’agit d’un ministre de l’Instruction publique.</p> 
+				<p class="article3"id="art9"></p> 
 			</div>
 			<div id="indice10" onclick="indice_of(this)" class="index">
-				<p class="article3">Rendons-nous dans le Hall des Amphithéâtres, l’un d’eux porte son nom.</p> 
+				<p class="article3"id="art10"></p> 
 			</div>
 			<div id="indice11" onclick="indice_of(this)" class="index">
-				<p class="article3">C’est une scientifique.</p> 
+				<p class="article3"id="art11"></p> 
 			</div>
 			<div id="indice12" onclick="indice_of(this)" class="index">
-				<p class="article3">C’est dû à un mouvement contestataire.</p> 
+				<p class="article3" id="art12"></p> 
 			</div>
 			<div id="indice13" onclick="indice_of(this)" class="index">
-				<p class="article3">C’est une scientifique.</p> 
+				<p class="article3" id="art13"></p> 
 			</div>
 			<div id="indice14" onclick="indice_of(this)" class="index">
-				<p class="article3">C’est le siège du rectorat de l’académie Paris et de la Chancellerie des Universités de Paris.</p> 
+				<p class="article3" id="art14"></p> 
 			</div>
 			<img id="cdx" src="src/img/codex.png" onclick="codex(this)">
-			<!--  title="Chaves"></a> -->
+			
+		</div><!--  title="Chaves"></a> -->
 	</div>
 	
 	

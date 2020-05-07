@@ -1,9 +1,17 @@
 
 var quiz = {};
 
-// EDIT THIS.
-// The answers should be IDENTICAL to the correct answer as you coded it in the HTML. This means punctuation and all. 
-
+quiz.question ={
+	1:	"Pour commencer, nous devons savoir jusqu'où remonter, je propose de revenir en 2020 et de chercher sa date de fondation.<br> Pour cela nous devons retrouver le nom d'un de ses fondateurs.",
+	2:	"Nous avons maintenant le nom d’un des fondateurs, il nous reste plus qu’à trouver la date de fondationde la Sorbonne.",
+	3:	"La Sorbonne date donc du Moyen-Âge et nous pouvons supposer qu’elle ne ressemblait pas à celle de 2020 à laquelle nous sommes revenus. D’ailleurs, les tracés en double pointillé blanc situé au centre de la Cour d’Honneur correspondent à la chapelle primitive, mais si nous savions quand a-t-elle été détruite, nous pourrions sûrement daté une autre période de construction et retrouver les plans.",
+	4:	"Le 5 décembre 1793, des révolutionnaires saccagèrent un tombeau qui se trouvait dans la nouvelle chapelle,n\ l'exhumèrent et décapitèrent son cadavre… à qui appartenait-il ?",
+	5:	"Au XIXe siècle c’est le temps des grands travaux sous la Troisième République en Sorbonne.Qui réorganisa l’ensemble du système d’enseignement supérieur français, baptisé Université impériale ? ",
+	6:	"La reconstruction des bâtiments du XVIIe siècle, trop exigus et incommodes, fut finalement réalisée sous l’impulsion de ? ",
+	7:	"En 1906 une femme devient la première femme enseignante à la Sorbonne. De qui s’agit-il ?",
+	8:	"En quelle année l’Université de Paris éclate-t-elle en 13 universités Parisiennes ?",
+	9:	"En 2020, la Sorbonne est ?"
+}
 quiz.answers = {
 	1: 'Robert de Sorbon',
 	2: '1253',
@@ -15,6 +23,23 @@ quiz.answers = {
 	8: '1968',
 	9: 'Un bâtiment'
 }
+quiz.article = {
+	1:"Son fondateur venait d’une commune française, située dans le département des Ardennes.",
+	2:"Son nom se trouve au milieu de la cour d’honneur.",
+	3:"Sur la plaque de la cour d’honneur il est indiqué que la chapelle a été édifiée en 1326, mais Robert de Sorbon est décédé en 1274. Notre mission ne va pas être simple car des erreurs se sont disséminés au fil du temps.",
+	4:"C’est un célèbre cardinal qui fit la commande d’un nouvel édifice",
+	5:"Rendons-nous dans le Hall des Amphithéâtres, l’un d’eux porte son nom.",
+	6:"Il s’agit d’un des proviseurs de la Sorbonne.",
+	7:"Il s’agit d’un empereur.",
+	8:"Ça commença en 1806.",
+	9:"Il s’agit d’un ministre de l’Instruction publique.",
+	10:"Rendons-nous dans le Hall des Amphithéâtres, l’un d’eux porte son nom.",
+	11:"C’est une scientifique.",
+	12:"C’est dû à un mouvement contestataire.",
+	13:"C’est une scientifique.",
+	14:"C’est le siège du rectorat de l’académie Paris et de la Chancellerie des Universités de Paris."
+}
+
 
 // STOP EDITING
 
@@ -60,6 +85,12 @@ quiz.engine = function(e) {
 		}
 	}
 	
+	if($('.result').show()){
+		
+		for (i = 0; i <= 50; i++) {
+			$('#indice' + i).hide();
+		}
+	}
 	
 	
 	if (quiz.thisQ <= quiz.quizLength) {
@@ -72,7 +103,11 @@ quiz.engine = function(e) {
 
 }
 
-// make it go
+		for (i = 0; i <= 50; i++) {
+			$('#art' + i).html( quiz.article[i]);
+			$('#Que' + i).html(quiz.question[i]);
+		}
+
 $('document').ready(function() {
 	quiz.init();
 });
