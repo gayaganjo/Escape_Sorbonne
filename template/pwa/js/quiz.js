@@ -54,6 +54,7 @@ quiz.init = function() {
 	$('.q1').show();
 	$('.article').hide();
 	$('.result').hide();
+	$('.notif').hide();
 }
 var timeReponse=0;
 quiz.engine = function(e) {
@@ -63,6 +64,7 @@ quiz.engine = function(e) {
 	if (response == quiz.answers[quiz.thisQ]) {
 		$('.result').show();
 		$('.result').html("Bravo! </br> ");
+		$('.notif').show();
 		
 		$('.q'+quiz.thisQ).hide();
 		// $('.article').show();
@@ -70,7 +72,8 @@ quiz.engine = function(e) {
 		quiz.thisQ++;
 		// $('.questions').hide();
 		$('.result').append( "Tu a collecté  "+ quiz.score + " élément historique sur " + quiz.quizLength + ", retrouve-les dans ton codex");
-		
+		$('.notif').html(quiz.score);
+		// setTimeout(function(){ $('.notif').hide(); }, 2000);
 	} else {
 		$('.result').show();
 		if(timeReponse%2==0){

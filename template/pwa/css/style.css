@@ -290,7 +290,7 @@ border: 1px solid rgb(218, 220, 221);
       box-shadow: 0 0.4rem 1.4rem 0 #f9948f;
       transform: translateY(-0.1rem);
       transition: transform 150ms;
-    background-color: rgb(240, 147, 147) }
+    background-color: rgba(49, 55, 66, 0.76) }
 
 .answers .answer .q {
   font-weight: bold; }
@@ -567,6 +567,20 @@ float: none;
   left: -5%;
   box-shadow: 0 0.1rem 1.2rem 0 #51949d;
 }
+.notif{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display:block;
+  position: relative;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255);
+ bottom: 3rem;
+left: 3.4rem;
+color: rgb(84, 84, 87);
+}
+
   .point{
     color: white;
     font-family: "Open Sans", sans-serif,bold;
