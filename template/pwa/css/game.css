@@ -4,13 +4,16 @@ margin-bottom: 0.5rem;
 width: 96%;
 height: 3rem;
 font-size: 1rem;
-background-color: rgb(226, 98, 90);
+background-color: #2b4f6d27;
 border-radius: 22px;
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgb(218, 220, 221);
 }
 
 .choice-container:hover{
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 #d1a58b;
+  box-shadow: 0 0.4rem 1.4rem 0 #51949d;
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
@@ -75,11 +78,11 @@ height: 11px;
 }
 
 #loader{
-  border: 1.6rem solid #ffffff;
+  border: 0.4rem solid #ffffff;
   border-radius: 50%;
-  border-top: 1.6rem solid #553025;
-  width: 12rem;
-  height: 12rem;
+  border-top: 0.4rem solid #5A5760D9;
+  width: 5rem;
+  height: 5rem;
   animation: spin 2s linear infinite;
 }
 

@@ -86,7 +86,17 @@ button, input, select, textarea {
   font-size: 100%;
   margin: 0;
   object-position: center; }
-
+input{
+  background-color: #24232381;
+  color: rgb(145, 143, 143);
+  font-family: "Open Sans", sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: lighter;
+  font-size: 151%;
+  text-align: center;
+ 
+}
 button, input {
   line-height: normal; }
 
@@ -264,14 +274,16 @@ font-size: 1.2rem;
   list-style-type: none; }
   .questions ul li {
     padding: 17px;
-    background:#f2696157;
-    margin: 3% 17%;
+    background:#2b4f6d27;
+    margin: 3% 10%;
     position: relative;
     cursor: pointer;
     color: #fbfbfa;
-    border-radius: 21px;
     font-size: 17px;
     text-align-last: center;
+    backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgb(218, 220, 221);
      }
     .questions ul li:hover {
       cursor: pointer;
@@ -443,10 +455,10 @@ float: none;
     max-width: 50%;
   }
   .but {
-    background-color: rgba(30, 29, 28, 0.84);
+    background-color: #31B7B7;
     border: none;
     color: #f4ecec;
-    padding: 2% 7%;
+    padding: 3% 7%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -458,7 +470,7 @@ float: none;
 .button4 {border-radius: 26px;}
 .index {
   border-radius: 25px;
-  background-color: #514f6d96;
+  background-color: #514f6d23;
   border: 1px solid rgb(218, 220, 221);
   padding: 1%;
   width: auto;
@@ -467,6 +479,8 @@ float: none;
   margin-right: auto;
   margin: auto auto;
   text-align: center;
+  backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
 }
 
 #information{
@@ -547,8 +561,11 @@ float: none;
   border-radius: 50%;
   display: inline-block;
   position: relative;
-  border: 1px solid #f06059;
+  backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(10px);
+  background-color: rgba(90, 87, 96, 0.247);
   left: -5%;
+  box-shadow: 0 0.1rem 1.2rem 0 #51949d;
 }
   .point{
     color: white;
@@ -645,7 +662,7 @@ border-radius: 12px;
   } */
   text {
     color: white;
-    font-size: 13px;
+    font-size: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -653,7 +670,7 @@ border-radius: 12px;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    height: 85%;
+    height: 46%;
   }
   .form{
 
@@ -921,17 +938,16 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 .machin:before{
-content: "";
-position: absolute;
-width: 100%;
-height: 100%;
-top: 0;
-left: 0;
-background-image: url('http://localhost/ES/src/img/minimalistic-1588629938143-5641.jpg');
-filter: blur(10px);
--webkit-filter: blur(10px);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-z-index: -1;
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 65%;
+ 
+  left: 5%;
+  background-color: #31B7B7;
+  filter: blur(75px);
+  -webkit-filter: blur(75px);
+ 
+  z-index: -1;
+  border-radius: 61px;
 }

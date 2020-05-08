@@ -58,88 +58,94 @@
     
     
     <div id="accueil">
-    <h2 class="welcome">Codex </h2> 
+    
     <h4 class="quiz">"pseudo"</h4>   <br>     
     
-    <h4 class="quiz">"tu a collecté 0/10 éléments historique de la Sorbonne"</h4> 
-    <div >
-      <div class="container_dev" id="code2" onclick="myFunction()" id="myBtn">
-          <img src="src/img/363px-Chapelle_de_la_sorbonne_interior.jpg" class="image">
-          <p class ="quiz" style="color: rgb(158, 238, 211);">À sa création, la Sorbonne était l’un des collèges du Moyen Âge <span id="dots">...</span><span id="more">de l’université de Paris dont le fondateur s’appelait Robert de Sorbon et était le confesseur du roi Louis Philippe. </span></p>
-          <button onclick="myFunction()" id="myBtn" ><img src="src/img/down.png" class="plus"></button>
+    <h4 class="quiz" id="element"></h4> 
+    <div class="container" id="Q1">
+      <img src="src/img/S_Robert.png" class="image">
+      <div class="overlay">
+        <text><img src="src/img/lock.png" style="width: 85%;"><br>Le Fondateur</text>
       </div>
     </div>
-    <div class="container" id="code1">
+    <div >
+      <div class="container_dev" id="R1" onclick="myFunction(this)" id="myBtn1">
+          <img src="src/img/SRobert.png" class="image">
+          <p class ="quiz">À sa création, la Sorbonne était l’un des collèges du Moyen Âge <span id="dots1">...</span><span id="more1">de l’université de Paris dont le fondateur s’appelait Robert de Sorbon et était le confesseur du roi Louis Philippe. </span></p>
+          <button onclick="myFunction()" id="myBtn" ><img src="src/img/down.png" class="plus"></button>
+          
+      </div>
+    </div>
+    <div class="container" id="Q2">
         <img src="src/img/sorbonne.jpg" class="image">
         
         <div class="overlay">
           
-          <text><img  src="src/img/lock.png"><br>Moyen Age</text>
+          <text><img  src="src/img/lock.png"style="width: 85%;"><br>Date de fondation</text>
         </div>
-        <!-- <span id="dots"></span><span id="more">
-          <div class="elem">
-            <img src="src/img/SRobert.png" class="imag">
-            <img src="src/img/explosion.jpg" class="imag">
-            <img src="src/img/XD6.png"class="imag" >
-          </div>
-        </span>
-          <button onclick="myFunction()" id="myBtn" ><img src="src/img/down.png" class="plus"></button> 
-      </div>-->
+      
     </div>
-   
-    <div class="container" id="code555">
-      <img src="src/img/363px-Chapelle_de_la_sorbonne_interior.jpg" class="image">
-      <div class="overlay">
-        <!-- <div class="text">Hello World</div> -->
-        <text><img src="src/img/lock.png"><br>Renaissance</text>
-      </div>
-    </div>
+    <div class="container_dev" id="R2" onclick="myFunction()" id="myBtn">
+      <img src="src/img/sorbonne.jpg" class="image">
+      <p class ="quiz">À sa création, la Sorbonne était l’un des collèges du Moyen Âge <span id="dots2">...</span><span id="more2">de l’université de Paris dont le fondateur s’appelait Robert de Sorbon et était le confesseur du roi Louis Philippe. </span></p>
+      <button onclick="myFunction()" id="myBtn" ><img src="src/img/down.png" class="plus"></button>
+      
   </div>
-    <div class="container">
+   
+    
+  </div>
+    <div class="container" id="Q3">
         <img src="src/img/Péristyle_Sorbonne_paysage_1_BD-690x461.jpg" class="image">
         <div class="overlay">
           <!-- <div class="text">Hello World</div> -->
-          <text><img src="src/img/lock.png"><br>Révolution Française </text>
+          <text><img src="src/img/lock.png" style="width: 85%;"><br>Date de construction </text>
         </div>
       </div>
-    
+      <div class="container_dev" id="R3" onclick="myFunction(this)" id="myBtn">
+        <img src="src/img/Péristyle_Sorbonne_paysage_1_BD-690x461.jpg" class="image">
+        <p class ="quiz">À sa création, la Sorbonne était l’un des collèges du Moyen Âge <span id="dots3">...</span><span id="more3">de l’université de Paris dont le fondateur s’appelait Robert de Sorbon et était le confesseur du roi Louis Philippe. </span></p>
+        <button onclick="myFunction()" id="myBtn" ><img src="src/img/down.png" class="plus"></button> 
+      </div>
     <div class="container">
         <img src="src/img/det_LC19_PARIS_MC_0686.jpg" class="image">
         <div class="overlay">
           <!-- <div class="text">Hello World</div> -->
-          <text><img src="src/img/lock.png"><br>Premier & Second Empire</text>
+          <text><img src="src/img/lock.png" style="width: 85%;"><br>Le cadavre décapité</text>
         </div>
       </div>
+      <div class="container_dev" id="Q1" onclick="myFunction(this)" id="myBtn">
+        <img src="src/img/det_LC19_PARIS_MC_0686.jpg" class="image">
+        <p class ="quiz">À sa création, la Sorbonne était l’un des collèges du Moyen Âge <span id="dots4">...</span><span id="more4">de l’université de Paris dont le fondateur s’appelait Robert de Sorbon et était le confesseur du roi Louis Philippe. </span></p>
+        <button onclick="myFunction()" id="myBtn" ><img src="src/img/down.png" class="plus"></button>
+        
     </div>
     <div class="container">
         <img src="src/img/sorbonne.jpg" class="image">
         <div class="overlay">
           <!-- <div class="text">Hello World</div> -->
-          <text ><img src="src/img/lock.png" ><br>Moderne</text>
+          <text ><img src="src/img/lock.png" style="width: 85%;"><br>Moderne</text>
         </div>
       </div>
+      <div class="container_dev" id="Q1" onclick="myFunction(this)" id="myBtn">
+        <img src="src/img/sorbonne.jpg" class="image">
+        <p class ="quiz">À sa création, la Sorbonne était l’un des collèges du Moyen Âge <span id="dots">...</span><span id="more">de l’université de Paris dont le fondateur s’appelait Robert de Sorbon et était le confesseur du roi Louis Philippe. </span></p>
+        <button onclick="myFunction()" id="myBtn" ><img src="src/img/down.png" class="plus"></button>
+        
     </div>
     <div class="container" id="4">
         <img src="src/img/sorbonne.jpg" class="image">
         <div class="overlay">
           <!-- <div class="text">Hello World</div> -->
-          <text><img src="src/img/lock.png"><br>Contemporaine</text>
+          <text><img src="src/img/lock.png" style="width: 85%;"><br>Contemporaine</text>
         </div>
       </div>
     </div>
-    <a class="prev" onclick="javascript:history.go(-1); return false;" style="left: 0%;position: sticky;bottom: 0;">&#10094;</a>
+    <a class="prev" onclick="javascript:history.go(-1);  " style="left: 0%;position: sticky;bottom: 0;">&#10094;</a>
     
 
-    <script> 
-      var isShown = localStorage.getItem('showit');
-      
-      if(isShown && isShown==2){
-        document.getElementById('code555').style.display='none';
-        
-        }else{
-          document.getElementById('code555').style.display='block';
-        }</script>
-  <script src="js/quiz.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/codex.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js"></script>
 </body>
 
 </html>

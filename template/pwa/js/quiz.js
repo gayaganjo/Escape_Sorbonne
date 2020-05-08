@@ -3,7 +3,7 @@ var quiz = {};
 
 quiz.question ={
 	1:	"Pour commencer, nous devons savoir jusqu'où remonter, je propose de revenir en 2020 et de chercher sa date de fondation.<br> Pour cela nous devons retrouver le nom d'un de ses fondateurs.",
-	2:	"Nous avons maintenant le nom d’un des fondateurs, il nous reste plus qu’à trouver la date de fondationde la Sorbonne.",
+	2:	"Nous avons maintenant le nom d’un des fondateurs, il nous reste plus qu’à trouver la date de fondation de la Sorbonne.",
 	3:	"La Sorbonne date donc du Moyen-Âge et nous pouvons supposer qu’elle ne ressemblait pas à celle de 2020 à laquelle nous sommes revenus. D’ailleurs, les tracés en double pointillé blanc situé au centre de la Cour d’Honneur correspondent à la chapelle primitive, mais si nous savions quand a-t-elle été détruite, nous pourrions sûrement daté une autre période de construction et retrouver les plans.",
 	4:	"Le 5 décembre 1793, des révolutionnaires saccagèrent un tombeau qui se trouvait dans la nouvelle chapelle,n\ l'exhumèrent et décapitèrent son cadavre… à qui appartenait-il ?",
 	5:	"Au XIXe siècle c’est le temps des grands travaux sous la Troisième République en Sorbonne.Qui réorganisa l’ensemble du système d’enseignement supérieur français, baptisé Université impériale ? ",
@@ -115,22 +115,7 @@ $('document').ready(function() {
 $('li').on('click', function(e) {
 	quiz.engine(e);
 });
-function myFunction() {
-	var dots = document.getElementById("dots");
-	var moreText = document.getElementById("more");
-	var btnText = document.getElementById("myBtn");
-	
 
-	if (dots.style.display === "none") {
-	  dots.style.display = "inline";
-	  btnText.innerHTML = "<img src=\'src/img/down.png\' class=\'plus'>"; 
-	  moreText.style.display = "none";
-	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "<img src=\'src/img/up.png' class=\'plus' >"; 
-	  moreText.style.display = "inline";
-	}
-  }
 	//   const codex2= document.getElementById('codex2');
 	//   const code2= document.getElementById('code2');
 	
