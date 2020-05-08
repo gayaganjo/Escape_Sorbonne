@@ -73,7 +73,7 @@ quiz.engine = function(e) {
 		// $('.questions').hide();
 		$('.result').append( "Tu a collecté  "+ quiz.score + " élément historique sur " + quiz.quizLength + ", retrouve-les dans ton codex");
 		$('.notif').html(quiz.score);
-		// setTimeout(function(){ $('.notif').hide(); }, 2000);
+		setTimeout(function(){ $('.notif').hide(); }, 2000);
 	} else {
 		$('.result').show();
 		if(timeReponse%2==0){
@@ -84,7 +84,7 @@ quiz.engine = function(e) {
 			
 		$('.result').html("Faux! encore un essai. j'ai des indices pour t'aider</br> ");
 			// $('#hello2').show();
-			setTimeout(function(){ $('#hello2').hide(); }, 2000);
+			setTimeout(function(){ $('#hello2').hide(); }, 4000);
 		}
 	}
 	
