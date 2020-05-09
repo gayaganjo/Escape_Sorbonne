@@ -39,13 +39,13 @@
         <nav class="float-r">
           <ul class="list-auto">
             <li>
-              <a href="#Chiquinha" title="Chiquinha">Mon compte</a>
+              <a href="index.html" title="Seu Madruga">Accueil</a>
             </li>
+            <li>
+              <a href="modes.html" title="Seu Madruga">changer de mode</a>
+              </li>
             <li>
               <a href="a_propos.html" title="Seu Madruga">A propos</a>
-            </li>
-            <li>
-              <a href="deconnexion.php" title="Quico">deconnexion</a>
             </li>
           </ul>
         </nav>
@@ -81,10 +81,12 @@
                 <br>
                 
                 <div style="text-align:center; display: inline-block;">
-                  <a class="prev" onclick="plusSlides(-1)" style="left: 0%;">&#10094;</a>
-                  <span class="dott" onclick="currentSlide(1)"></span> 
-                  <span class="dott" onclick="currentSlide(2)"></span> 
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  <a id="prev" onclick="plusSlides(-1)" style="left: 0%;">&#10094;</a>
+                 <div id="points"> 
+                      <span class="dott" onclick="currentSlide(1)"></span> 
+                      <span class="dott" onclick="currentSlide(2)"></span> 
+                  </div>
+                  <a id="next" onclick="plusSlides(1)" style="bottom: -3%;">&#10095;</a>
                 </div>
                 
                 
@@ -117,7 +119,9 @@
     function showSlides(n) {
       var i;
       var slides = document.getElementsByClassName("mySlides");
-      var prev = document.getElementsByClassName("prev");
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+      var points = document.getElementById("points");
       var dots = document.getElementsByClassName("dott");
       if (n > slides.length) {slideIndex = 1}    
       if (n < 1) {slideIndex = slides.length}
@@ -130,7 +134,11 @@
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
-      
+      if(n==2){
+        prev.style.display="none";
+        points.style.display="none";
+        next.style.display="none";
+      }
       
     }
    

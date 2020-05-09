@@ -122,23 +122,6 @@ $('li').on('click', function(e) {
 	quiz.engine(e);
 });
 
-	//   const codex2= document.getElementById('codex2');
-	//   const code2= document.getElementById('code2');
-	
-	//   codex2.style.display='none';
-	  
-	//   code2.ondbclick=function(){
-	// 	codex2.style.display='block';
-	//   }
-	// var codex02=document.getElementById("codex02");
-	
-	// function cdx1(){
-	// 	var codex02=document.getElementById("codex02");
-		
-	// 		codex02.style.display="none";
-		
-			
-	// }
 
 
 	var borg = document.getElementById("borg");

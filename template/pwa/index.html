@@ -68,21 +68,7 @@
                     Vous remonterez dans le temps avec votre robot qui ouvrira les portails spatio-temporels et qui pourra vous aider dans la résolution des énigmes grâce à sa puissance de calcul quantique</div>
                 </div>
                 
-                <div class="mySlides fade">
-                 
-                  <!-- <img src="src/img/robert-de-sorbon.jpg" style="width:100%"> -->
-                 
-                  <div class="text">Mission</br>Des terroristes cherchent à détruire ces documents du passé, vous avez une heure pour récupérer les plans avant qu’il ne soit trop tard. D’autres collègues ont essayé avant vous, essayez d’obtenir un meilleur score !
-                    <br><form action="identification.html"><button class="but button4" onclick="bliper()" type="submit">Connexion</button><br></form>
-                    
-                    <br><form action="inscription.html"><button class="but button4" onclick="bliper()" type="submit" >inscription</button></form>
-                    <br>Promenade</br>Vous retournez dans le passé quand vous voulez pour résoudre les énigmes à votre rythme afin de découvrir la genèse de la Sorbonne et récupérer les plans pour votre ONG.
-                    <br><form action="navigator1.html"><button class="but button4" onclick="bliper()" type="submit" >Jouer !</button></form>
-                </div>
-                
-                    
-                
-                </div>
+               
                 
                 
                 
@@ -91,12 +77,14 @@
                 <br>
                 
                 <div style="text-align:center; display: inline-block;">
-                  <a class="prev" onclick="plusSlides(-1)" style="left: 0%;">&#10094;</a>
+                  <a id="prev" onclick="plusSlides(-1)" style="left: 0%;"></a>
+                 <div id="points">
                   <span class="dott" onclick="currentSlide(1)"></span> 
                   <span class="dott" onclick="currentSlide(2)"></span> 
                   <span class="dott" onclick="currentSlide(3)"></span> 
-                  <span class="dott" onclick="currentSlide(4)"></span>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                  
+                  <a id="next" onclick="plusSlides(1)" style="bottom: 2%;"></a>
                 </div>
                 
                 
@@ -108,6 +96,11 @@
     var aud1 = document.getElementById("aud1");
     var aud2 = document.getElementById("aud2");
     var blip = document.getElementById("blip");
+    var prev = document.getElementById("prev");
+    prev.innerHTML="&#10094;";
+    var next = document.getElementById("next");
+    next.innerHTML="&#10095;";
+    var points=document.getElementById("points");
     aud1.pause();
     aud2.pause();
     blip.pause();
@@ -145,8 +138,12 @@
     }else if(n==3){
       aud1.pause();
       aud2.play();
-    }else if(n==4){
-      aud2.pause();
+      next.innerText="C'est parti";
+      next.onclick= function(){
+        window.location.assign("modes.html");
+             }
+             points.style.display="none";
+             prev.style.display="none";
     }
       
     }
