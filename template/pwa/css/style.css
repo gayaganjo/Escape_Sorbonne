@@ -283,6 +283,7 @@ font-size: 1.2rem;
     text-align-last: center;
     backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
+
 border: 1px solid rgb(218, 220, 221);
      }
     .questions ul li:hover {
@@ -576,8 +577,8 @@ float: none;
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   background-color: rgba(255, 255, 255);
- bottom: 3rem;
-left: 3.4rem;
+ bottom: 2rem;
+left: 2rem;
 color: rgb(84, 84, 87);
 }
 
@@ -753,7 +754,7 @@ border-radius: 12px;
     top: 0%;
   }
   .bg_4{
-    background-image: url('../src/img/XD7.jpg');
+    background-image: url('../src/img/XD8.jpg');
     background-size: cover;
     position: absolute;
     z-index: 1;
