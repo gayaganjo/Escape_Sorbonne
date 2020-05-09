@@ -43,7 +43,7 @@
               <a href="#Chiquinha" title="Chiquinha">Scores</a>
             </li>
             <li>
-              <a href="Compte.html" title="Chiquinha">Mon compte</a>
+              <a href="#Chiquinha" title="Chiquinha">Mon compte</a>
             </li>
             <li>
               <a href="#Seu-Madruga" title="Seu Madruga">A propos</a>
@@ -55,16 +55,29 @@
         </nav>
       </header>
     
-    <div style="margin: 19% auto;">
-        <h5 class="welcome"style="top: 0%;" >A propos</h5></br>
-        <h4 class="quiz">Crédits</h4><br>
-        <h4 class="quiz">Equipe</h4><br>
-        <h4 class="quiz">Lucile Jobic</h4>
-        <h4 class="quiz">Gaya Benchaba</h4>
-        <h4 class="quiz">Anis</h4>
-        <h4 class="quiz">Remerciements</h4>
+    <div style="margin: 19% auto; text-align: center;">
+       
+        <p class="index " style="width: 45%; margin-bottom: 7%; color: aliceblue;">Modifier mon pseudo et mon mot de passe</p>
+        <form action="navigator2.html" method="post" >
+       
+            <div class="quiz">
+                <h1 class="quiz">Votre pseudo</h1>
+                <input  type="text" name="Nom" id="Nom" required>
+                <h1 class="quiz">Nouveau pseudo</h1>
+                <input  type="text" name="Nom" id="Nom"  required>
+                <h1 class="quiz">Mot de passe</h1>
+                <input  type="password" name="PassWord" id="PassWord"  required>
+                <h1 class="quiz">Nouveau mot de passe</h1>
+                <input  type="password" name="conpassword" id="conpassword"  required>
+                <button class="but button4" type="submit" name="formsend" >Valider</button>
+            </div>
+        </form>
+       
+       
     
-  </div>
+     </div>
+     <a class="prev" onclick="javascript:history.go(-1);  " style="left: 0%;position: sticky;bottom: 0;">&#10554; </a>
+    </div>
 </body>
 
 </html>

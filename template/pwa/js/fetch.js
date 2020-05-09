@@ -1,6 +1,6 @@
 var monjson=false;
 fetch("https://gayaganjo.github.io/Escape_Sorbonne/template/pwa/js/questions.json")
-  .then(function(res) {
+  .then(res => {
    return res.json();
   })
   .then(function(data){

@@ -60,7 +60,7 @@ var timeReponse=0;
 quiz.engine = function(e) {
 	response = e.target.innerHTML;
 	timeReponse++;
-
+	
 	if (response == quiz.answers[quiz.thisQ]) {
 		$('.result').show();
 		$('.result').html("Bravo! </br> ");
@@ -74,11 +74,13 @@ quiz.engine = function(e) {
 		$('.result').append( "Tu a collecté  "+ quiz.score + " élément historique sur " + quiz.quizLength + ", retrouve-les dans ton codex");
 		$('.notif').html(quiz.score);
 		setTimeout(function(){ $('.notif').hide(); }, 2000);
+		localStorage.setItem('currentQuestion',quiz.thisQ);
 	} else {
 		$('.result').show();
 		if(timeReponse%2==0){
 			$('.q'+quiz.thisQ).hide();
 		quiz.thisQ++;
+		localStorage.setItem('currentQuestion',quiz.thisQ+1);
 		$('.result').html("Faux! mais tu a débloqué un element dans le codex.</br> ");
 		}else{
 			
@@ -86,6 +88,7 @@ quiz.engine = function(e) {
 			// $('#hello2').show();
 			setTimeout(function(){ $('#hello2').hide(); }, 4000);
 		}
+		
 	}
 	
 	if($('.result').show()){
@@ -102,7 +105,7 @@ quiz.engine = function(e) {
 		return window.location.assign("fin_promenade.html");
 
 	}
-	 
+	
 
 }
 
@@ -143,7 +146,7 @@ $('li').on('click', function(e) {
 
 	var result=document.getElementById("result");
 	var robot=document.getElementById("robot");
-	var commence=document.getElementById("commence");
+	
 	$('#indice1').hide();
 	$('#indice2').hide();
 	$('#indice3').hide();
@@ -162,7 +165,7 @@ $('li').on('click', function(e) {
 	setTimeout(function(){ $('#hello').hide(); }, 2000);
 	setTimeout(function(){ $('#hello1').show(); }, 3000);
 	setTimeout(function(){ $('#hello1').hide(); }, 6000);
-	setTimeout(function(){ $('#commence').hide();},7000);
+	
 	$('#hello2').hide();
 	function bigImg(robot) {
 		
@@ -187,6 +190,7 @@ $('li').on('click', function(e) {
 		indice2.style.display="none";
 		questions.style.display="block";
 	}
+	
 	
 	
 	var timesClicked = 0;

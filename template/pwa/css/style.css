@@ -95,7 +95,7 @@ input{
   font-weight: lighter;
   font-size: 151%;
   text-align: center;
- 
+  margin-bottom: 6%;
 }
 button, input {
   line-height: normal; }
@@ -209,7 +209,7 @@ font-size: 1.2rem;
         color: white;
         font-family: "Open Sans", sans-serif,bold;
         width: 100%;
-        font-size: 60%;
+        font-size: 80%;
         margin: 0 auto;
         font-weight: lighter;
         text-align: center;
@@ -472,7 +472,7 @@ float: none;
   border-radius: 25px;
   background-color: #514f6d23;
   border: 1px solid rgb(218, 220, 221);
-  padding: 1%;
+  padding: 3%;
   width: auto;
   height: auto;
   margin-left: auto;

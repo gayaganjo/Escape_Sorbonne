@@ -140,12 +140,14 @@
         </div>
       </div>
     </div>
-    <a class="prev" onclick="javascript:history.go(-1);  " style="left: 0%;position: sticky;bottom: 0;">&#10094;</a>
+    <a class="prev" onclick="back() " style="left: 0%;position: sticky;bottom: 0;font-size: 3rem;">&#10554;</a>
     
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="js/codex.js"></script>
-  <script src="https://polyfill.io/v3/polyfill.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.js"></script>
+  <script>
+    console.log(localStorage.getItem('currentQuestion'));</script>
 </body>
 
 </html>

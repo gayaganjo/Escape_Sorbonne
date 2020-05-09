@@ -369,7 +369,7 @@ input[id*="modal_"]:checked + div.modal .modal-content {
   }
 
   header+section {
-    padding-top: 80px;
+    padding-top: 0;
   }
 
   section {

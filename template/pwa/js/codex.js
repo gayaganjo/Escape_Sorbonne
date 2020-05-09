@@ -4,10 +4,11 @@ function myFunction() {
 	var dots = document.getElementById("dots");
 	var moreText = document.getElementById("more");
 	var btnText = document.getElementById("myBtn");
-	
+  
+
     for (i = 0; i <= 50; i++) {
         $('#art' + i).html( quiz.article[i]);
-       
+    
     }
 	if ($('#dots'+i).hide()) {
 	  dots.style.display = "inline";
@@ -30,4 +31,13 @@ function myFunction() {
         
         }else{
           document.getElementById('R1').style.display='block';
+        }
+
+
+       
+
+        function back(){
+          
+         window.history.back();     
+        
         }
