@@ -24,7 +24,7 @@
 </head>
 <body class="bg_2">
 
-    <div style="background-color: #8c266475;    height: 100%;">
+    <div style="background-color: #1f4b9e75;    height: 100%;">
       <!-- <img src="src/img/XD2.jpg"> -->
       <header>
         <h1 class="float-l">
@@ -71,17 +71,30 @@
                         <p class="article4 "style="font-size: 74%;line-height: 192%;" > Le codex est l'endroit où tu pourras retrouver tout le contenu historique
                             que tu va pouvoir collecter au fil du jeu </p> 
                     </div>
-                    <br><form action="chrono1.html" style="margin-bottom: -7%;"><button class="but button4" type="submit"style="margin-bottom: -11%;" >C'est parti !</button></form>
+                   
                 </div>
+                <div class="mySlides fade">
+                  
+                  <span class="dot"  style="left: 0;margin: 16%;width: 25%;height: 25%;"><h1 class="point" id="chrono" style="margin: 36% auto;">
+                    00:00
+                    </h1></span>
+                  <div class="index " style="width: 90%;border-radius: 58px;">
+                      <p class="article4 "style="font-size: 74%;line-height: 192%;" > Vous avez 30 minutes pour repondre aux questions </p> 
+                  </div>
+                  <br><form action="chrono1.html" style="margin-bottom: -7%;"><button class="but button4" type="submit"style="margin-bottom: -11%;" >C'est parti !</button></form>
+              </div>
                 
                 </div>
                 <br>
                 
                 <div style="text-align:center; display: inline-block;">
                   <a id="prev" onclick="plusSlides(-1)" style="left: 0%;">&#10094;</a>
-                  <span class="dott" onclick="currentSlide(1)"></span> 
-                  <span class="dott" onclick="currentSlide(2)"></span> 
-                  <a id="next" onclick="plusSlides(1)">&#10095;</a>
+                 <div id="points"> 
+                       <span class="dott" onclick="currentSlide(1)"></span> 
+                       <span class="dott" onclick="currentSlide(2)"></span> 
+                       <span class="dott" onclick="currentSlide(3)"></span>
+                 </div>
+                   <a id="next" style="bottom: -3%;" onclick="plusSlides(1)">&#10095;</a>
                 </div>
                 
                 
@@ -109,7 +122,9 @@
     function showSlides(n) {
       var i;
       var slides = document.getElementsByClassName("mySlides");
-      var prev = document.getElementsByClassName("prev");
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+      var points = document.getElementById("points");
       var dots = document.getElementsByClassName("dott");
       if (n > slides.length) {slideIndex = 1}    
       if (n < 1) {slideIndex = slides.length}
@@ -123,7 +138,11 @@
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
       
-      
+      if(n==3){
+        prev.style.display="none";
+        next.style.display="none";
+        points.style.display="none";
+      }
     }
    
     </script>

@@ -1,11 +1,11 @@
 .choice-container{
   display: flex;
-margin-bottom: 0.5rem;
-width: 96%;
+margin-bottom: 0.8rem;
+width: 80%;
 height: 3rem;
 font-size: 1rem;
 background-color: #2b4f6d27;
-border-radius: 22px;
+/* border-radius: 22px; */
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
 border: 1px solid rgb(218, 220, 221);
