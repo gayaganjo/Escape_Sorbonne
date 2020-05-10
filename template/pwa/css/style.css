@@ -709,14 +709,12 @@ border-radius: 12px;
   margin: 4px 2px;
   cursor: pointer;
   } */
-  #myBtn{
-    
-
-background-color: unset;
-border: none;
+  #Btn1, #Btn2,#Btn3,#Btn4,#Btn5,#Btn6,#Btn7,#Btn8,#Btn9, #myBtn {
+    background-color: unset;
+    border: none;
 
   }
-  #more {display: none;}
+  #more1,#more2,#more3,#more4,#more5,#more6,#more7,#more8,#more9 {display: none;}
   .plus{
     height: 30px;
     width: 30px;
@@ -757,7 +755,7 @@ border-radius: 12px;
     top: 0%;
   }
   .bg_4{
-    background-image: url('../src/img/XD8.jpg');
+    background-image: url('../src/img/fond.jpg');
     background-size: cover;
     position: absolute;
     z-index: 1;
