@@ -260,7 +260,8 @@ font-size: 1.2rem;
 .questions p {
  
   font-size: 70%; 
-  background-color: #0d0b0b8a;}
+  background-color: #2b4f6d27;
+  border: 1px solid rgb(218, 220, 221);}
   .questions p.result {
     text-align: center;
     font-size: 1em; }

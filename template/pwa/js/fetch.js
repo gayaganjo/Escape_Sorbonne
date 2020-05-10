@@ -1,5 +1,5 @@
 var monjson=false;
-fetch("https://gayaganjo.github.io/Escape_Sorbonne/template/pwa/js/questions.json")
+fetch("https://gayaganjo.github.io/Escape_Sorbonne/template/data/itemsjoueur.json")
   .then(res => {
    return res.json();
   })
@@ -7,6 +7,3 @@ fetch("https://gayaganjo.github.io/Escape_Sorbonne/template/pwa/js/questions.jso
 	console.log(data)
   });
   
-  const test=document.getElementById('test');
-   
-  test.append(quiz.answers[0]);
