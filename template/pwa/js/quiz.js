@@ -65,7 +65,37 @@ quiz.engine = function(e) {
 		$('.result').show();
 		$('.result').html("Bravo! </br> ");
 		$('.notif').show();
+
 		
+		switch(quiz.thisQ){
+			case 1:
+				localStorage.setItem('rep1', 2);
+				break;
+			case 2:
+				localStorage.setItem('rep2', 2);
+				break;
+			case 3:
+				localStorage.setItem('rep3', 2);
+				break;
+			case 4:
+				localStorage.setItem('rep4', 2);
+				break;
+			case 5:
+				localStorage.setItem('rep5', 2);
+				break;
+			case 6:
+				localStorage.setItem('rep6', 2);
+				break;
+			case 7:
+				localStorage.setItem('rep7', 2);
+				break;
+			case 8:
+				localStorage.setItem('rep8', 2);
+				break;
+			case 9:
+				localStorage.setItem('rep9', 2);
+				break;
+		}
 		$('.q'+quiz.thisQ).hide();
 		// $('.article').show();
 		quiz.score++;
@@ -82,6 +112,35 @@ quiz.engine = function(e) {
 		quiz.thisQ++;
 		localStorage.setItem('currentQuestion',quiz.thisQ+1);
 		$('.result').html("Faux! mais tu a débloqué un element dans le codex.</br> ");
+		switch(quiz.thisQ){
+			case 1:
+				localStorage.setItem('rep1', 2);
+				break;
+			case 2:
+				localStorage.setItem('rep2', 2);
+				break;
+			case 3:
+				localStorage.setItem('rep3', 2);
+				break;
+			case 4:
+				localStorage.setItem('rep4', 2);
+				break;
+			case 5:
+				localStorage.setItem('rep5', 2);
+				break;
+			case 6:
+				localStorage.setItem('rep6', 2);
+				break;
+			case 7:
+				localStorage.setItem('rep7', 2);
+				break;
+			case 8:
+				localStorage.setItem('rep8', 2);
+				break;
+			case 9:
+				localStorage.setItem('rep9', 2);
+				break;
+		}
 		}else{
 			
 		$('.result').html("Faux! encore un essai. j'ai des indices pour t'aider</br> ");

@@ -130,7 +130,7 @@ table {
 body, figure {
   height: 100%;
   margin: 0;
-  background-image: linear-gradient(rgb(41, 18, 4), rgb(51, 30, 17));
+  background-image: linear-gradient(rgb(5, 4, 41), rgb(88, 159, 181));
   background-attachment: fixed; }
 
 legend, button::-moz-focus-inner, input::-moz-focus-inner {
@@ -623,6 +623,7 @@ color: rgb(84, 84, 87);
 opacity: 0.9;
 
 border-radius: 12px;
+margin: 12%;
   }
   .container_questions{
     width: 97%;
@@ -655,8 +656,9 @@ border-radius: 12px;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(227, 98, 90, 0.5);
+    background-color: rgba(88, 159, 181, 0.623);
     border-radius: 12px;
+    backdrop-filter: blur(4px);
   }
   .overlay2 {
     position: static;
@@ -726,15 +728,14 @@ border-radius: 12px;
     position: relative;
     /* width: 50%;*/
     margin: 13px;
-    background-image:linear-gradient(rgb(227, 98, 90), #46161abf);
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(227, 98, 90);
-opacity: 0.9;
-
-border-radius: 12px;
+    background-image:linear-gradient(rgb(5, 4, 41), rgb(88, 159, 181));
+    opacity: 0.9;
+    border-radius: 12px;
+    margin: 12%;
   }
   .container_dev:hover{
     cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgb(227, 98, 90);
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(88, 159, 181);
   transform: translateY(-0.2rem);
   transition: transform 150ms;
   }
