@@ -104,13 +104,13 @@ quiz.engine = function(e) {
 		$('.result').append( "Tu a collecté  "+ quiz.score + " élément historique sur " + quiz.quizLength + ", retrouve-les dans ton codex");
 		$('.notif').html(quiz.score);
 		setTimeout(function(){ $('.notif').hide(); }, 2000);
-		localStorage.setItem('currentQuestion',quiz.thisQ);
+		
 	} else {
 		$('.result').show();
 		if(timeReponse%2==0){
 			$('.q'+quiz.thisQ).hide();
-		quiz.thisQ++;
-		localStorage.setItem('currentQuestion',quiz.thisQ+1);
+		
+		
 		$('.result').html("Faux! mais tu a débloqué un element dans le codex.</br> ");
 		switch(quiz.thisQ){
 			case 1:
@@ -141,6 +141,10 @@ quiz.engine = function(e) {
 				localStorage.setItem('rep9', 2);
 				break;
 		}
+		quiz.thisQ++;
+		quiz.score++;
+		$('.notif').show();
+		$('.notif').html(quiz.score);
 		}else{
 			
 		$('.result').html("Faux! encore un essai. j'ai des indices pour t'aider</br> ");
