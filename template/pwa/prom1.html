@@ -22,25 +22,7 @@
     <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
     <meta name="msapplication-TileColor" content="#FFFFFF">
 	<title>Escape Sorbonne</title>
-<<<<<<< HEAD
-	<script src="https://d3js.org/d3.v5.min.js"></script>
-	<script>
-		var shown=1;
-		function showorhide()
-		{
-		if(shown===1){
-			localStorage.setItem('showit', 2);
-			shown=2;
-			}
-			else{
-				localStorage.setItem('showit', 1);
-				shown=1;
-			}
-		}
-	</script>
-=======
 
->>>>>>> 7f5f2a077db515290f391e31a98edfb2764f9f29
 </head>
 <body class="bg_4">
 	
@@ -74,18 +56,9 @@
 		</nav>
 	
 	</header>
-<<<<<<< HEAD
-    <h3 class="welcome1" id="commence" >COMMENÇONS ! </h3>  
-	<!-- <div class="article"><img src="src/img/SRobert.png"><p>À sa création, la Sorbonne était l’un des collèges du Moyen  ge de l’université de Paris dont le fondateur s’appelait Robert de Sorbon et était le confesseur du roi Louis Philippe. 
-	</p>
-	</div> -->
-		<section class="questions" id="question"style="color: rgb(51, 48, 48);")>
-		
-=======
 		<section class="questions" id="questions"style="color: rgb(51, 48, 48); backdrop-filter: blur(3px);")>
 			
 			
->>>>>>> 7f5f2a077db515290f391e31a98edfb2764f9f29
 			<div class="question q1 ">
 				
 				<p class="quiz " style="position: relative;z-index: 1;font-size: 70%;" id="Que1"> </p>
@@ -243,44 +216,7 @@
 		
 
 	</script>
-<<<<<<< HEAD
-<!--
-
-var urlRes = "data/itemsquestions.json";
-
-		d3.json(urlRes, {crossOrigin: "anonymous"}).then(function (data) {
-				console.log(data);
-
-				var select = d3
-					.select("#lstResUni")
-					.append("select")
-					.selectAll("option")
-					.data(data)
-					.enter()
-					.append("option")
-					.html(d => {
-						return d["o:title"];
-
-					})
-				}); 
-
-				//documentation de l'API 
-				omeka s :https://omeka.org/s/docs/developer/api/rest_api/ 
-				//initialisation des variables
-				 var urlOmk = "http://193.54.152.41/DWM1920/Houdinews" 
-				 var urlAPI = urlOmk + "/api/"; urlAPIquestion = "data/Houdinews-items-questions.json"; 
-				//Pour récupérer la question un
-				 $(document).ready(function () { d3.json(urlAPIquestion).then(function (data) { console.log(data);
-				// supprime les anciens résultats
-				  d3.select("#laquestionun").selectAll("div").remove();
-				//affiche le résultat de la requête
-				 d3.select("#laquestionun").selectAll("div").data(data).enter().append('div') .html(d => { if ((d['o:title']) == "Q1 France ?") { if (d['houdinews:houdinewsintitule']) var html = '<p>' + d['houdinews:houdinewsintitule'][0]['@value'] + '</p>'; return html; } }); }); });
-				
--->
-
-=======
 	<script src="js/debloquage.js"></script>
->>>>>>> 7f5f2a077db515290f391e31a98edfb2764f9f29
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="https://polyfill.io/v3/polyfill.js"></script>
 	<script src="js/quiz.js"></script>
