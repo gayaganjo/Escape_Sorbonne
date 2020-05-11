@@ -1,19 +1,16 @@
 .choice-container{
   display: flex;
-margin-bottom: 0.8rem;
-width: 80%;
+margin-bottom: 0.5rem;
+width: 96%;
 height: 3rem;
 font-size: 1rem;
-background-color: #2b4f6d27;
-/* border-radius: 22px; */
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-border: 1px solid rgb(218, 220, 221);
+background-color: rgb(226, 98, 90);
+border-radius: 22px;
 }
 
 .choice-container:hover{
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 #51949d;
+  box-shadow: 0 0.4rem 1.4rem 0 #d1a58b;
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
@@ -78,11 +75,11 @@ height: 11px;
 }
 
 #loader{
-  border: 0.4rem solid #ffffff;
+  border: 1.6rem solid #ffffff;
   border-radius: 50%;
-  border-top: 0.4rem solid #5A5760D9;
-  width: 5rem;
-  height: 5rem;
+  border-top: 1.6rem solid #553025;
+  width: 12rem;
+  height: 12rem;
   animation: spin 2s linear infinite;
 }
 
