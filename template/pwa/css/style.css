@@ -291,7 +291,7 @@ font-size: 1.2rem;
      }
     .questions ul li:hover {
       cursor: pointer;
-      box-shadow: 0 0.4rem 1.4rem 0 #f9948f;
+      box-shadow: 0 0.4rem 1.4rem 0 #45c8ce;
       transform: translateY(-0.1rem);
       transition: transform 150ms;
     background-color: rgba(49, 55, 66, 0.76) }
@@ -901,12 +901,12 @@ img {vertical-align: middle;}
 .text {
   color: #f2f2f2;
   font-size: 83%;
-  padding: 9% 5%;
+  padding: 3% 6%;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
-  line-height: 1.4rem;
+  line-height:  1.7rem;;
 }
 
 /* Number text (1/3 etc) */

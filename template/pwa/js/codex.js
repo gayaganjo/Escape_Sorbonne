@@ -148,8 +148,9 @@ function myFunction() {
  //  gerer le déblocage des élements du codex //
 //                                           //
 
-for (i = 0; i <= 50; i++) {
+for (i = 0; i <= 10; i++) {
   $('#lock' + i).hide();
+  
 }
 
 var rep1 = localStorage.getItem('rep1');
@@ -161,7 +162,11 @@ var rep6 = localStorage.getItem('rep6');
 var rep7 = localStorage.getItem('rep7');
 var rep8 = localStorage.getItem('rep8');
 var rep9 = localStorage.getItem('rep9');
-
+window.onbeforeunload = function(){
+  for (i = 0; i <= 50; i++) {
+  localStorage.removeItem('rep'+i);
+  }
+}
       var element=document.getElementById('element');
       var elem=0;
       if(rep1 && rep1==2){
