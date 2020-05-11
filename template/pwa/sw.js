@@ -1,6 +1,9 @@
 var cacheName = 'hello-pwa'; 
 var filesToCache = [   
-    './',   './index.html',   './css/style.css',   './js/main.js' ]; 
+    './',   './index.html',   './css/style.css',   './js/main.js', 
+'./a_propos.html', './chrono1.html', './modes.html','chrono.js'
+        
+]; 
  
 /* Démarrer le service worker et mettre en cache tout le contenu de l'application */
  self.addEventListener('install', 
