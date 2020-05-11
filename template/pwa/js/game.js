@@ -32,7 +32,7 @@ fetch("https://gayaganjo.github.io/Escape_Sorbonne/template/pwa/js/questionss.js
       indiceQuestion.forEach((indic, index) => {
         formattedQuestion["indic" + (index + 1)] = indic;
       });
-      console.log(formattedQuestion.indic2);
+      
       const answerChoices = [...loadedQuestion.incorrect_answers];
       
       formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;
@@ -80,14 +80,22 @@ getNewQuestion = () => {
    robot.onclick= function(){
     timesClicked++;
     if(timesClicked%2==0){
+      if(currentQuestion['indic2'].length==1){
+        indice1.style.display="block";
+        art1.innerHTML=currentQuestion['indic1'] ;
+      }else{
       indice1.style.display="block";
       art1.innerHTML=currentQuestion['indic2'] ;
+      console.log(currentQuestion.indic2);
+    }
     }else{
       if(currentQuestion['indic1'].length==1){
         art1.innerHTML=currentQuestion['indic2'] ;
+        console.log(currentQuestion.indic1);
       }else{
       indice1.style.display="block";
       art1.innerHTML=currentQuestion['indic1'] ;
+      console.log(currentQuestion.indic1);
     }
     }
   };
