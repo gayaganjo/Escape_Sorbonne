@@ -1,9 +1,9 @@
-
-fetch("http://localhost/Escape_Sorbonne/template/pwa/js/questions.json")
-  .then(function(res) {
-    return res.json();
+var monjson=false;
+fetch("https://gayaganjo.github.io/Escape_Sorbonne/template/data/itemsjoueur.json")
+  .then(res => {
+   return res.json();
   })
-  .then(function(quiz){
-	console.log(quiz)
+  .then(function(data){
+	console.log(data)
   });
   

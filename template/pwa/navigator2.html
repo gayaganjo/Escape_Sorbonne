@@ -22,9 +22,9 @@
                 <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
        <meta name="msapplication-TileColor" content="#FFFFFF">
 </head>
-<body class="bg_2">
+<body class="bg_4">
 
-    <div style="background-color: #8c266475;    height: 100%;">
+    <div>
       <!-- <img src="src/img/XD2.jpg"> -->
       <header>
         <h1 class="float-l">
@@ -38,10 +38,6 @@
   
         <nav class="float-r">
           <ul class="list-auto">
-            
-            <li>
-              <a href="#Chiquinha" title="Chiquinha">Scores</a>
-            </li>
             <li>
               <a href="#Chiquinha" title="Chiquinha">Mon compte</a>
             </li>
@@ -55,45 +51,53 @@
         </nav>
       </header>
       <div style="position: relative;text-align: center;" >	 
-		<!-- <img src="src/img/Bot.gif" id="robot" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="indice(this)" style="width: 50%;">
-		
-        <div onclick="indice_of(this)" class="index" style="width: 90%;border-radius: 58px;">
-            <p class="article4"> Salut, je me nomme Navigator et je vais te guider tout au long de cette aventure pour te faire découvrir les secrest
-                de la Sorbonne.<br> Clique sur moi pour te faire aider, je serais la pour te donner des indices
-            </p> 
-        </div>
-             title="Chaves"></a> -->
-             <div class="slideshow-container"style="margin: 38% auto;">
+	
+             <div class="slideshow-container"style="margin: 34% auto;">
                 <div class="mySlides fade">
                   
                     <img src="src/img/Bot.gif" id="robot"  style="width: 50%;">
-                    <!-- <div class="text" style="margin: 51% auto;font-size: 94%;padding: 16%;">Bienvenue dans le jeu sur mobile</br>Escape Sorbone 
-                    </div> -->
-                    <div onclick="indice_of(this)" class="index" style="width: 90%;border-radius: 58px;">
-                        <p class="article4"> Salut, je me nomme Navigator et je vais te guider tout au long de cette aventure pour te faire découvrir les secrest
-                            de la Sorbonne.<br> Clique sur moi pour te faire aider, je serais la pour te donner des indices
+              
+                    <div onclick="indice_of(this)" class="index " style="width: 90%;border-radius: 58px;">
+                        <p class="article4" style="font-size: 74%;line-height: 192%;"> Salut, je me nomme Navigator et je vais te guider tout au long de cette aventure pour te faire découvrir les secrest
+                            de la Sorbonne.<br> <div class="article4" style="font-weight: bold; font-size: 74%;line-height: 192%;">Clique sur moi </br>je serais la pour te donner des indices</div>
                         </p> 
                     </div>
                 </div>
 
                 <div class="mySlides fade">
                   
-                    <img src="src/img/codex.png" id="robot"  style="width: 50%;">
-                    <div class="index" style="width: 90%;border-radius: 58px;">
-                        <p class="article4"> Le codex est l'endroit où tu pourras retrouver tout le contenu historique
+                  <span class="dot"  style="left: 0;margin: 16%;width: 69%;height: 25%;">
+                  
+                    <img src="src/img/codex1.png" id="robot"  style="width: 50%;">
+                  </span>
+                    <div class="index " style="width: 90%;border-radius: 58px;">
+                        <p class="article4 "style="font-size: 74%;line-height: 192%;" > Le codex est l'endroit où tu pourras retrouver tout le contenu historique
                             que tu va pouvoir collecter au fil du jeu </p> 
                     </div>
-                    <br><form action="chrono1.html" style="margin-bottom: -7%;"><button class="but button4" type="submit"style="margin-bottom: -11%;" >C'est parti !</button></form>
+                   
                 </div>
+                <div class="mySlides fade">
+                  
+                  <span class="dot"  style="left: 0;margin: 16%;width: 25%;height: 25%;"><h1 class="point" id="chrono" style="margin: 36% auto;">
+                    00:00
+                    </h1></span>
+                  <div class="index " style="width: 90%;border-radius: 58px;">
+                      <p class="article4 "style="font-size: 74%;line-height: 192%;" > Vous avez 30 minutes pour repondre aux questions </p> 
+                  </div>
+                  <br><form action="chrono1.html" style="margin-bottom: -7%;"><button class="but button4" type="submit"style="margin-bottom: -11%;" >C'est parti !</button></form>
+              </div>
                 
                 </div>
                 <br>
                 
                 <div style="text-align:center; display: inline-block;">
-                  <a class="prev" onclick="plusSlides(-1)" style="left: 0%;">&#10094;</a>
-                  <span class="dott" onclick="currentSlide(1)"></span> 
-                  <span class="dott" onclick="currentSlide(2)"></span> 
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  <a id="prev" onclick="plusSlides(-1)" style="left: 0%;">&#10094;</a>
+                 <div id="points"> 
+                       <span class="dott" onclick="currentSlide(1)"></span> 
+                       <span class="dott" onclick="currentSlide(2)"></span> 
+                       <span class="dott" onclick="currentSlide(3)"></span>
+                 </div>
+                   <a id="next" style="bottom: -3%;" onclick="plusSlides(1)">&#10095;</a>
                 </div>
                 
                 
@@ -121,7 +125,9 @@
     function showSlides(n) {
       var i;
       var slides = document.getElementsByClassName("mySlides");
-      var prev = document.getElementsByClassName("prev");
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+      var points = document.getElementById("points");
       var dots = document.getElementsByClassName("dott");
       if (n > slides.length) {slideIndex = 1}    
       if (n < 1) {slideIndex = slides.length}
@@ -135,7 +141,11 @@
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
       
-      
+      if(n==3){
+        prev.style.display="none";
+        next.style.display="none";
+        points.style.display="none";
+      }
     }
    
     </script>

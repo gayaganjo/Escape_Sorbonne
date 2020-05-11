@@ -61,14 +61,14 @@
                     <img src="src/img/Bot.gif" id="robot"  style="width: 50%;">
                     <!-- <div class="text" style="margin: 51% auto;font-size: 94%;padding: 16%;">Bienvenue dans le jeu sur mobile</br>Escape Sorbone 
                     </div> -->
-                    <div onclick="indice_of(this)" class="index" style="width: 90%;border-radius: 58px;">
-                        <p class="article4"> Bravo !<br>tu a fini.<br> Clique sur moi pour te faire aider, je serais la pour te donner des indices
+                    <div  class="index" style="width: 90%;border-radius: 58px;">
+                        <p class="article4"> Bravo !<br>tu a fini.<br> 
                         </p>
-                        <form action="score.html"style="margin: 3% auto;"><button class="but button4" type="submit" style="margin-bottom: -11%;" >Voir score !</button></form> 
+                        <form action="score.html"style="margin: 3% auto;"><button class="but button4" id="saveScoreBtn" type="submit" style="margin-bottom: -11%;" onclick="saveHighScore(event)" >Voir score !</button></form> 
                     </div>
                 </div>
 
-                
+                <script src="js/end.js"></script>
 </body>
 
 </html>

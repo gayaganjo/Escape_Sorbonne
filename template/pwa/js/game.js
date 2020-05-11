@@ -13,7 +13,11 @@ let questionCounter = 0;
 let availableQuestions = [];
 let togg = document.getElementById("togg");
 article.style.display="none";
-
+var hello=document.getElementById("indice1");
+var art1=document.getElementById("art1");
+var robot=document.getElementById("robot");
+var timesClicked = 0;
+indice1.style.display="none";
 let questions = [];
 fetch("https://gayaganjo.github.io/Escape_Sorbonne/template/pwa/js/questionss.json")
   .then(res => {
@@ -21,11 +25,16 @@ fetch("https://gayaganjo.github.io/Escape_Sorbonne/template/pwa/js/questionss.js
   })
   .then(loadedQuestions => {
     questions = loadedQuestions.results.map(loadedQuestion => {
-      const formattedQuestion = {
-        question: loadedQuestion.question
-      };
-
+      const formattedQuestion = {question: loadedQuestion.question };
+      const indiceQuestion = [...loadedQuestion.indice];
+      formattedQuestion.indices= Math.floor(Math.random() * 3) + 1;
+      indiceQuestion.splice(formattedQuestion.indices - 1, 0, loadedQuestion.indice);
+      indiceQuestion.forEach((indic, index) => {
+        formattedQuestion["indic" + (index + 1)] = indic;
+      });
+      
       const answerChoices = [...loadedQuestion.incorrect_answers];
+      
       formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;
       answerChoices.splice(formattedQuestion.answer - 1, 0, loadedQuestion.correct_answer);
       answerChoices.forEach((choice, index) => {
@@ -45,6 +54,7 @@ startGame = () => {
   questionCounter = 0;
   score = 0;
   availableQuestions = [...questions];
+  
   getNewQuestion();
   game.classList.remove("hidden");
   loader.classList.add("hidden");
@@ -65,6 +75,36 @@ getNewQuestion = () => {
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerHTML = currentQuestion.question;
+  
+  
+   robot.onclick= function(){
+    timesClicked++;
+    if(timesClicked%2==0){
+      if(currentQuestion['indic2'].length==1){
+        indice1.style.display="block";
+        art1.innerHTML=currentQuestion['indic1'] ;
+      }else{
+      indice1.style.display="block";
+      art1.innerHTML=currentQuestion['indic2'] ;
+      console.log(currentQuestion.indic2);
+    }
+    }else{
+      if(currentQuestion['indic1'].length==1){
+        art1.innerHTML=currentQuestion['indic2'] ;
+        console.log(currentQuestion.indic1);
+      }else{
+      indice1.style.display="block";
+      art1.innerHTML=currentQuestion['indic1'] ;
+      console.log(currentQuestion.indic1);
+    }
+    }
+  };
+  indice1.onclick =function(){
+    indice1.style.display="none";
+  }
+  
+  
+
   choices.forEach(choice => {
     const number = choice.dataset['number'];
     choice.innerHTML = currentQuestion['choice' + number];
@@ -96,10 +136,7 @@ choices.forEach(choice => {
       getNewQuestion();
     }, 1000);
     
-  // }else{
-  //   game.style.display="none";
-  //  article.style.display = "block";
-  // }
+    
   });
   // if(acceptingAnswers){
   //   game.style.display="none";
@@ -155,15 +192,15 @@ function myFunction() {
 //   }
 // );
     // var result=document.getElementById("result");
-    var robot=document.getElementById("robot");
-    var commence=document.getElementById("commence");
-    var hello=document.getElementById("hello");
+    
+
+  
     var hello1=document.getElementById("hello1");
     var hello2=document.getElementById("hello2");
-	setTimeout(function(){ hello.style.display="none"; }, 1000);
-	setTimeout(function(){ hello1.style.display="block"; }, 2000);
-	setTimeout(function(){hello1.style.display="none"; }, 6000);
-	setTimeout(function(){ commence.style.display="none";},7000);
+	// setTimeout(function(){ hello.style.display="none"; }, 1000);
+	// setTimeout(function(){ hello1.style.display="block"; }, 2000);
+	// setTimeout(function(){hello1.style.display="none"; }, 6000);
+
 	hello2.style.display="none";
 	function bigImg(robot) {
 		
@@ -188,71 +225,3 @@ function myFunction() {
 	}
 	
 	
-	// var timesClicked = 0;
-	// 	function indice(robot){
-	// 		// $('.result').hide();
-	// 		if(quiz.thisQ==1){
-	// 			timesClicked++;
-	// 			if (timesClicked%2==0){
-	// 				$('#indice1').hide();
-	// 				$('#indice2').show();
-	// 			}else{
-	// 				$('#indice2').hide(); 
-	// 				$('#indice1').show(); 
-	// 			}
-	// 		}
-	// 		if(quiz.thisQ ==2){
-	// 			$('#indice3').show();
-	// 		}
-	// 		if(quiz.thisQ ==3){
-	// 			$('#indice4').show();
-	// 			$('.questions').hide();
-	// 		}
-	// 		if(quiz.thisQ==4){
-	// 			timesClicked++;
-	// 			if (timesClicked%2==0){
-	// 				$('#indice5').hide();
-	// 				$('#indice6').show();
-	// 			}else{
-	// 				$('#indice6').hide();
-	// 				$('#indice5').show();
-	// 			}
-	// 		}
-	// 		if(quiz.thisQ==5){
-	// 			timesClicked++;
-	// 			if (timesClicked%2==0){
-	// 				$('#indice7').hide();
-	// 				$('#indice8').show();
-	// 			}else{
-	// 				$('#indice8').hide();
-	// 				$('#indice7').show();
-	// 			}
-	// 		}
-	// 		if(quiz.thisQ ==6){
-	// 			$('#indice9').show();
-	// 		}
-	// 		if(quiz.thisQ==7){
-	// 			timesClicked++;
-	// 			if (timesClicked%2==0){
-	// 				$('#indice10').hide();
-	// 				$('.questions').hide();
-	// 				$('#indice11').show();
-	// 			}else{
-	// 				$('#indice11').hide();
-	// 				$('#indice10').show();
-	// 			}
-	// 		}
-	// 		if(quiz.thisQ==8){
-	// 			timesClicked++;
-	// 			if (timesClicked%2==0){
-	// 				$('#indice12').hide();
-	// 				$('#indice13').show();
-	// 			}else{
-	// 				$('#indice13').hide();
-	// 				$('#indice12').show();
-	// 			}
-	// 		}
-	// 		if(quiz.thisQ ==9){
-	// 			$('#indice14').show();
-	// 		}
-	// 	}

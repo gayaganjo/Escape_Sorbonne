@@ -3,7 +3,7 @@ var quiz = {};
 
 quiz.question ={
 	1:	"Pour commencer, nous devons savoir jusqu'où remonter, je propose de revenir en 2020 et de chercher sa date de fondation.<br> Pour cela nous devons retrouver le nom d'un de ses fondateurs.",
-	2:	"Nous avons maintenant le nom d’un des fondateurs, il nous reste plus qu’à trouver la date de fondationde la Sorbonne.",
+	2:	"Nous avons maintenant le nom d’un des fondateurs, il nous reste plus qu’à trouver la date de fondation de la Sorbonne.",
 	3:	"La Sorbonne date donc du Moyen-Âge et nous pouvons supposer qu’elle ne ressemblait pas à celle de 2020 à laquelle nous sommes revenus. D’ailleurs, les tracés en double pointillé blanc situé au centre de la Cour d’Honneur correspondent à la chapelle primitive, mais si nous savions quand a-t-elle été détruite, nous pourrions sûrement daté une autre période de construction et retrouver les plans.",
 	4:	"Le 5 décembre 1793, des révolutionnaires saccagèrent un tombeau qui se trouvait dans la nouvelle chapelle,n\ l'exhumèrent et décapitèrent son cadavre… à qui appartenait-il ?",
 	5:	"Au XIXe siècle c’est le temps des grands travaux sous la Troisième République en Sorbonne.Qui réorganisa l’ensemble du système d’enseignement supérieur français, baptisé Université impériale ? ",
@@ -54,35 +54,104 @@ quiz.init = function() {
 	$('.q1').show();
 	$('.article').hide();
 	$('.result').hide();
+	$('.notif').hide();
 }
 var timeReponse=0;
 quiz.engine = function(e) {
 	response = e.target.innerHTML;
 	timeReponse++;
-
+	
 	if (response == quiz.answers[quiz.thisQ]) {
 		$('.result').show();
 		$('.result').html("Bravo! </br> ");
+		$('.notif').show();
+
 		
+		switch(quiz.thisQ){
+			case 1:
+				localStorage.setItem('rep1', 2);
+				break;
+			case 2:
+				localStorage.setItem('rep2', 2);
+				break;
+			case 3:
+				localStorage.setItem('rep3', 2);
+				break;
+			case 4:
+				localStorage.setItem('rep4', 2);
+				break;
+			case 5:
+				localStorage.setItem('rep5', 2);
+				break;
+			case 6:
+				localStorage.setItem('rep6', 2);
+				break;
+			case 7:
+				localStorage.setItem('rep7', 2);
+				break;
+			case 8:
+				localStorage.setItem('rep8', 2);
+				break;
+			case 9:
+				localStorage.setItem('rep9', 2);
+				break;
+		}
 		$('.q'+quiz.thisQ).hide();
 		// $('.article').show();
 		quiz.score++;
 		quiz.thisQ++;
 		// $('.questions').hide();
 		$('.result').append( "Tu a collecté  "+ quiz.score + " élément historique sur " + quiz.quizLength + ", retrouve-les dans ton codex");
+		$('.notif').html(quiz.score);
+		setTimeout(function(){ $('.notif').hide(); }, 2000);
 		
 	} else {
 		$('.result').show();
 		if(timeReponse%2==0){
 			$('.q'+quiz.thisQ).hide();
-		quiz.thisQ++;
+		
+		
 		$('.result').html("Faux! mais tu a débloqué un element dans le codex.</br> ");
+		switch(quiz.thisQ){
+			case 1:
+				localStorage.setItem('rep1', 2);
+				break;
+			case 2:
+				localStorage.setItem('rep2', 2);
+				break;
+			case 3:
+				localStorage.setItem('rep3', 2);
+				break;
+			case 4:
+				localStorage.setItem('rep4', 2);
+				break;
+			case 5:
+				localStorage.setItem('rep5', 2);
+				break;
+			case 6:
+				localStorage.setItem('rep6', 2);
+				break;
+			case 7:
+				localStorage.setItem('rep7', 2);
+				break;
+			case 8:
+				localStorage.setItem('rep8', 2);
+				break;
+			case 9:
+				localStorage.setItem('rep9', 2);
+				break;
+		}
+		quiz.thisQ++;
+		quiz.score++;
+		$('.notif').show();
+		$('.notif').html(quiz.score);
 		}else{
 			
 		$('.result').html("Faux! encore un essai. j'ai des indices pour t'aider</br> ");
 			// $('#hello2').show();
-			setTimeout(function(){ $('#hello2').hide(); }, 2000);
+			setTimeout(function(){ $('#hello2').hide(); }, 4000);
 		}
+		
 	}
 	
 	if($('.result').show()){
@@ -99,7 +168,7 @@ quiz.engine = function(e) {
 		return window.location.assign("fin_promenade.html");
 
 	}
-	 
+	
 
 }
 
@@ -115,39 +184,7 @@ $('document').ready(function() {
 $('li').on('click', function(e) {
 	quiz.engine(e);
 });
-function myFunction() {
-	var dots = document.getElementById("dots");
-	var moreText = document.getElementById("more");
-	var btnText = document.getElementById("myBtn");
-	
 
-	if (dots.style.display === "none") {
-	  dots.style.display = "inline";
-	  btnText.innerHTML = "<img src=\'src/img/down.png\' class=\'plus'>"; 
-	  moreText.style.display = "none";
-	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "<img src=\'src/img/up.png' class=\'plus' >"; 
-	  moreText.style.display = "inline";
-	}
-  }
-	//   const codex2= document.getElementById('codex2');
-	//   const code2= document.getElementById('code2');
-	
-	//   codex2.style.display='none';
-	  
-	//   code2.ondbclick=function(){
-	// 	codex2.style.display='block';
-	//   }
-	// var codex02=document.getElementById("codex02");
-	
-	// function cdx1(){
-	// 	var codex02=document.getElementById("codex02");
-		
-	// 		codex02.style.display="none";
-		
-			
-	// }
 
 
 	var borg = document.getElementById("borg");
@@ -155,7 +192,7 @@ function myFunction() {
 
 	var result=document.getElementById("result");
 	var robot=document.getElementById("robot");
-	var commence=document.getElementById("commence");
+	
 	$('#indice1').hide();
 	$('#indice2').hide();
 	$('#indice3').hide();
@@ -174,7 +211,7 @@ function myFunction() {
 	setTimeout(function(){ $('#hello').hide(); }, 2000);
 	setTimeout(function(){ $('#hello1').show(); }, 3000);
 	setTimeout(function(){ $('#hello1').hide(); }, 6000);
-	setTimeout(function(){ $('#commence').hide();},7000);
+	
 	$('#hello2').hide();
 	function bigImg(robot) {
 		
@@ -199,6 +236,7 @@ function myFunction() {
 		indice2.style.display="none";
 		questions.style.display="block";
 	}
+	
 	
 	
 	var timesClicked = 0;

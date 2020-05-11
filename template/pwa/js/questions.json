@@ -1,6 +1,8 @@
 {
+  "quiz": [
+    {
     "answers":[
-      "Robert de Sorbon",
+        "Robert de Sorbon",
         "1253",
         "1635",
         "Cardinal de Richelieu",
@@ -9,8 +11,9 @@
         "Marie Curie",
         "1968",
         "Un bâtiment"
-      ] ,
-      "question":[
+        ]
+     },
+     { "question":[
         "Pour commencer, nous devons savoir jusqu'où remonter, je propose de revenir en 2020 et de chercher sa date de fondation.<br> Pour cela nous devons retrouver le nom d'un de ses fondateurs.",
            "Nous avons maintenant le nom d’un des fondateurs, il nous reste plus qu’à trouver la date de fondationde la Sorbonne.",
            "La Sorbonne date donc du Moyen-Âge et nous pouvons supposer qu’elle ne ressemblait pas à celle de 2020 à laquelle nous sommes revenus. D’ailleurs, les tracés en double pointillé blanc situé au centre de la Cour d’Honneur correspondent à la chapelle primitive, mais si nous savions quand a-t-elle été détruite, nous pourrions sûrement daté une autre période de construction et retrouver les plans.",
@@ -20,8 +23,8 @@
            "En 1906 une femme devient la première femme enseignante à la Sorbonne. De qui s’agit-il ?",
            "En quelle année l’Université de Paris éclate-t-elle en 13 universités Parisiennes ?",
            "En 2020, la Sorbonne est ?"
-        ],
-     "article": [
+        ] },
+   {  "article": [
        "Son fondateur venait d’une commune française, située dans le département des Ardennes.",
        "Son nom se trouve au milieu de la cour d’honneur.",
        "Sur la plaque de la cour d’honneur il est indiqué que la chapelle a été édifiée en 1326, mais Robert de Sorbon est décédé en 1274. Notre mission ne va pas être simple car des erreurs se sont disséminés au fil du temps.",
@@ -37,4 +40,6 @@
        "C’est une scientifique.",
        "C’est le siège du rectorat de l’académie Paris et de la Chancellerie des Universités de Paris."
          ]
-   }
+     }
+  ] 
+}

@@ -4,6 +4,10 @@
         {   "num": 1,
             "question": "Pour commencer, nous devons savoir jusqu’où remonter. Je propose de revenir en 2020 et de chercher sa date de fondation. Pour cela nous devons retrouver le nom d’un de ses fondateurs.",
             "correct_answer": "Robert de Sorbon",
+            "indice": [
+                "Son fondateur venait d’une commune française, située dans le département des Ardennes.",
+                "Son nom se trouve au milieu de la cour d’honneur."
+                ],
             "incorrect_answers": [
                 "Louis de Sorbonne ",
                 "Philippe de Sorbon",
@@ -14,6 +18,7 @@
             "num": 2,
             "question": "Nous avons maintenant le nom d’un des fondateurs, il nous reste plus qu’à trouver la date de fondation de la Sorbonne.",
             "correct_answer": "1253",
+            "indice": "Sur la plaque de la cour d’honneur il est indiqué que la chapelle a été édifiée en 1326, mais Robert de Sorbon est décédé en 1274. Notre mission ne va pas être simple car des erreurs se sont disséminés au fil du temps.",
             "incorrect_answers": [
                 "1263",
                 "1363",
@@ -22,9 +27,10 @@
         },
         
         {
-            "num": "3",
+            "num": 3,
             "question": "La Sorbonne date donc du Moyen-Âge et nous pouvons supposer qu’elle ne ressemblait pas à celle de 2020 à laquelle nous sommes revenus. D’ailleurs, les tracés en double pointillé blanc situé au centre de la Cour d’Honneur correspondent à la chapelle primitive, mais si nous savions quand a-t-elle été détruite, nous pourrions sûrement daté une autre période de construction et retrouver les plans.",
             "correct_answer": "1635",
+            "indice": "C’est un célèbre cardinal qui fit la commande d’un nouvel édifice",
             "incorrect_answers": [
                 "1430",
                 "1522",
@@ -32,9 +38,13 @@
             ]
         },
         {   
-            "num": "4",
+            "num": 4,
             "question": "Le 5 décembre 1793, des révolutionnaires saccagèrent un tombeau qui se trouvait dans la nouvelle chapelle, l'exhumèrent et décapitèrent son cadavre… à qui appartenait-il ?",
             "correct_answer": "Cardinal de Richelieu",
+            "indice": [
+                 "Rendons-nous dans le Hall des Amphithéâtres, l’un d’eux porte son nom.",
+                 "Il s’agit d’un des proviseurs de la Sorbonne."
+                 ],
             "incorrect_answers": [
                 "Robert de Sorbon",
                 "Napoléon bonaparte",
@@ -42,9 +52,13 @@
             ]
         },
         {   
-            "num": "5",
+            "num": 5,
             "question": "Au XIXe siècle c’est le temps des grands travaux sous la Troisième République en Sorbonne. Qui réorganisa l’ensemble du système d’enseignement supérieur français, baptisé Université impériale ?",
             "correct_answer": "Napoléon Bonaparte",
+            "indice":[
+                "Il s’agit d’un empereur.",
+                "Ça commença en 1806."
+                ],
             "incorrect_answers": [
                 "Jules Ferry",
                 "Louis Pasteur",
@@ -52,9 +66,10 @@
             ]
         },
         {   
-            "num": "6",
+            "num": 6,
             "question": "La reconstruction des bâtiments du XVIIe siècle, trop exigus et incommodes, fut finalement réalisée sous l’impulsion de ?",
             "correct_answer": "Jules Ferry",
+            "indice": "Il s’agit d’un ministre de l’Instruction publique.",
             "incorrect_answers": [
                 "Octave Gréard",
                 "Victor Hugo",
@@ -62,9 +77,10 @@
             ]
         },
         {   
-            "num": "7",
+            "num": 7,
             "question": "En 1906 une femme devient la première femme enseignante à la Sorbonne. De qui s’agit-il ?",
             "correct_answer": "Marie Curie",
+            "indice":"C’est une scientifique.",
             "incorrect_answers": [
                 "Simone de Beauvoir",
                 "Simone Weil",
@@ -72,9 +88,13 @@
             ]
         },
         {   
-            "num": "8",
+            "num": 8,
             "question": "En quelle année l’Université de Paris éclate-t-elle en 13 universités Parisiennes ?",
             "correct_answer": "1968",
+            "indice": [
+                "C’est dû à un mouvement contestataire."
+                
+                ],
             "incorrect_answers": [
                 "1918",
                 "1939",
@@ -82,9 +102,10 @@
             ]
         },
         {   
-            "num": "9",
+            "num": 9,
             "question": "En 2020, la Sorbonne est ?",
             "correct_answer": "Un bâtiment",
+            "indice": "C’est le siège du rectorat de l’académie Paris et de la Chancellerie des Universités de Paris.",
             "incorrect_answers": [
                 "Un lycée",
                 "Une université",
