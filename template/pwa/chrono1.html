@@ -111,7 +111,7 @@ function reset_timer() {
 		<div id="game" class="corner1">
 		  
 			<div >
-		 	 <h2 id="question" class="quiz" style="margin-bottom: 10%;background-color: #2d2c2a78; margin-top: 10%;"></h2>
+		 	 <h2 id="question" class="quiz" style="margin-bottom: 3%; margin-top: 1%;border: 1px solid rgb(218, 220, 221);background-color: #2b4f6d27;backdrop-filter: blur(10px);"></h2>
 			  <div class="choice-container">
 				<p class="choice-text" data-number="1"></p>
 			  </div>
@@ -137,9 +137,12 @@ function reset_timer() {
 		</div>
 		
 		<div class="perso" >	 
-			<img src="src/img/Bot.gif" id="robot" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="indice(this)" style="width: 24%;">
-			<div class="talk" id="hello"><p>Bienvenue voyageur temporelle</p></div>
-			<div class="talk1" id="hello1"><p>je suis là pour vous aider !</p></div>
+			<img src="src/img/Bot.gif" id="robot"  style="width: 24%;">
+			<div id="indice1"class="index">
+				<p class="article3" id="art1"> 
+				</p> 
+			</div>
+			<!-- <div class="talk1" id="hello1"><p>je suis là pour vous aider !</p></div> -->
 			<div class="talk2" id="hello2" ><p>Besoin d'aide ? ⇫⇫⇫</p></div>
 			
 				<img id="cdx" src="src/img/codex.png" onclick="codex(this)" style="width: 24%;">

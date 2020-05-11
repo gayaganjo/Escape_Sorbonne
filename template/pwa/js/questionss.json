@@ -80,10 +80,7 @@
             "num": 7,
             "question": "En 1906 une femme devient la première femme enseignante à la Sorbonne. De qui s’agit-il ?",
             "correct_answer": "Marie Curie",
-            "indice": [
-                "Rendons-nous dans le Hall des Amphithéâtres, l’un d’eux porte son nom.",
-                "C’est une scientifique."
-                ],
+            "indice":"C’est une scientifique.",
             "incorrect_answers": [
                 "Simone de Beauvoir",
                 "Simone Weil",
@@ -95,8 +92,8 @@
             "question": "En quelle année l’Université de Paris éclate-t-elle en 13 universités Parisiennes ?",
             "correct_answer": "1968",
             "indice": [
-                "C’est dû à un mouvement contestataire.",
-                "C’est une scientifique."
+                "C’est dû à un mouvement contestataire."
+                
                 ],
             "incorrect_answers": [
                 "1918",
