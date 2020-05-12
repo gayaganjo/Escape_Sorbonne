@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    
+  <title>Escape Sorbonne</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+  
+
+    <style>
+  
+  .navbar button:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+    #map{
+      max-width: 100%;
+    }
+
+    h1,p {
+         color: black;
+         font-weight: bold;
+      }
+      .gitButton{
+        padding:15px 30px;
+        background-color: #47a230;
+        text-decoration: none;
+        font-weight: 900;
+        color: white;
+        text-transform:uppercase;
+        transition: background-color .5s;
+        border: none;
+          border-radius: 2px;
+          cursor: pointer;
+      }
+      .gitButton:hover {background-color: #1d7806}
+      .gitButton:visited {color: white;}
+      .manualButton {
+        padding:15px 30px;
+        background-color: #308ba2;
+        margin-left: 40px;
+        text-decoration: none;
+        font-weight: 900;
+        color: white;
+        text-transform:uppercase;
+        transition: background-color .5s;
+        border: none;
+          border-radius: 2px;			
+          cursor: pointer;
+      }
+
+.nav-item {
+  margin-left: 145px
+}
+
+
+@media (max-width: 1199.98px) {
+    .nav-item {
+        margin-left: 100px
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .nav-item {
+        margin-left: 0px;
+    }
+}
+
+
+
+
+
+@media(max-width: 500px) 
+
+{
+
+
+  .navbar-brand img{
+      width: 120px;
+      height: 120px;
+      margin-left: -30px;
+      margin-top: -60px;
+      }
+.navbar-toggler{
+  margin-top: -85px;
+}
+      }
+                
+ .session-v{
+  margin-top: 90px;
+ }
+
+
+.h1-p {
+  left: -5px;
+}
+
+.h1-carte{
+  margin-top: 50px;
+}
+
+.manualButton{
+margin-top: 30px;
+  margin-left: 1px;
+}
+
+}
+
+  </style>
+</head>
+
+<body>
+
+
+  <header class="site-navbar site-navbar-target">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo blanc.png" width="90" height="90">
+      </a>  
+    
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" style="color: black;" href="index.html">Accueil </a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: black;" href="about.html">A Propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: black;" href="application.html">L'application</a>
+          </li>
+      
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: black;" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    </header>
+
+
+
+
+    <div class="ftco-blocks-cover-1">
+        <div class="ftco-cover-1" style="background-image: url('images/contactimg.JPG');">
+            <div class="container">
+              <h1 class="h1-p" style=" color: #fff;font-size: 4rem;position: absolute;text-transform: uppercase;width: 100%;z-index: 2; 
+              top: 400px; text-align: center; right: -30px;">
+             Contact
+                </h1>   
+
+            </div>
+        </div>
+      </div>
+
+    
+    <div class="site-section">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-lg-8 mb-5" >
+            <form action="#" method="post">
+              <div class="form-group row">
+                <div class="col-md-6 mb-4 mb-lg-0">
+                  <input type="text" class="form-control" placeholder="Votre Nom">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Votre Prénom">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Adresse mail">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <textarea name="" id="" class="form-control" placeholder="Ecrivez votre message" cols="30" rows="10"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6 mr-auto">
+                  <input type="submit" class="btn btn-block btn-primary text-black py-3 px-5 rounded-0" style="background-color: #48b9b8;" value="Envoyer le message">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4 ml-auto">
+            <div class="bg-white p-3 p-md-5">
+              <h3 class="heading-39291">Informations complémentaire</h3>
+              <ul class="list-unstyled footer-link">
+                <li class="d-block mb-3">
+                  <span class="d-block text-black small text-uppercase font-weight-bold">Addresse:</span>
+                  <span>17, Rue de la Sorbonne 75005 Paris.</span></li>
+                <li class="d-block mb-3"><span class="d-block text-black small text-uppercase font-weight-bold">Tel:</span><span>+1 242 4942 290</span></li>
+                <li class="d-block mb-3"><span class="d-block text-black small text-uppercase font-weight-bold">e-mail:</span><span>info@escapesorbonne.com</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    	<!-- Start Contact Section -->
+		<section class="easyPrint" id="contact">
+      <div class="container" style="margin-top: -80px;">
+      <h1 class="h1-carte">La carte de la Sorbonne</h1>
+<br>
+    <div id="map" style="height:400px; width:1000px;"></div>
+     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+
+      <script src="dist/bundle.js"></script>
+
+      <script>
+  
+              var map = L.map('map').setView([48.8484556,2.3432774], 17);
+          
+              var tiles = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.png', {
+                maxZoom: 18,
+                attribution: 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+              }).addTo(map);
+          
+              L.marker([48.8484556,2.3432774]).addTo(map)
+              .bindPopup("<b>17, Rue de la Sorbonne 75005 Paris").openPopup();
+          
+          
+              L.polygon([
+                [48.848899, 2.343585],
+                [48.849354, 2.344539],
+                [48.849368, 2.343386]
+                ]).addTo(map).bindPopup("Bibliothéque de sorbonne.");
+          
+          
+              var popup = L.popup();
+          
+          
+              var printer = L.easyPrint({
+                    tileLayer: tiles,
+                    sizeModes: ['Current', 'A4Landscape', 'A4Portrait'],
+                    filename: 'myMap',
+                    exportOnly: true,
+                    hideControlContainer: true
+              }).addTo(map);
+          
+              function manualPrint () {
+                printer.printMap('CurrentSize', 'MyManualPrint')
+              }
+          
+            </script>
+
+          <div class="imprimer" style="margin-top: 20px;">
+            <a href="https://github.com/anisbelabed" target="_blank"><button class="gitButton" style="background-color: #48b9b8;"><i class="fa fa-github fa-lg"></i>&nbsp;&nbsp; pour accéder a notre page github</button></a>
+            <button class="manualButton" onclick="manualPrint()">Imprimer</button>
+          </div>
+          
+      </div>
+    </section>
+
+    <br><br>
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-7">
+                <h2 class="footer-heading mb-4">A Propos de site</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+
+              </div>
+              <div class="col-md-4 ml-auto">
+                <h2 class="footer-heading mb-4">Services</h2>
+                <ul class="list-unstyled">
+                  <li><a href="about.html">A propos</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="patrimoine.html">L'application</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4 ml-auto">
+
+            <div class="mb-5">
+              <h2 class="footer-heading mb-4">S'inscrire à la Newsletter</h2>
+              <form action="#" method="post" class="footer-suscribe-form">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control rounded-0 border-secondary text-white bg-transparent" placeholder="Entrer votre mail" aria-label="Enter Email" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary text-black" type="button" id="button-addon2" style="background-color: #48b9b8;">Envoyer</button>
+                  </div>
+                </div>
+            </div>
+
+
+            <h2 class="footer-heading mb-4">Suivez-nous</h2>
+            <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
+            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+            <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+            </form>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="pt-5">
+              <p class="small">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Escape Sorbonne<a href="https://colorlib.com" target="_blank" > - Tous droits réservés</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    </div>
+
+
+    <script src="js/navigation.js"></script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+  </body>
+
+</html>
