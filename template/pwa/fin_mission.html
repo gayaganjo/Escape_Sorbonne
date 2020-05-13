@@ -62,9 +62,14 @@
                     <!-- <div class="text" style="margin: 51% auto;font-size: 94%;padding: 16%;">Bienvenue dans le jeu sur mobile</br>Escape Sorbone 
                     </div> -->
                     <div  class="index" style="width: 90%;border-radius: 58px;">
-                        <p class="article4"> Bravo !<br>tu a fini.<br> 
-                        </p>
-                        <form action="score.html"style="margin: 3% auto;"><button class="but button4" id="saveScoreBtn" type="submit" style="margin-bottom: -11%;" onclick="saveHighScore(event)" >Voir score !</button></form> 
+                      <h1 class="finalScore" id="finalScore">0</h1>
+                        <!-- <form action="score.html"style="margin: 3% auto;">
+                          <button class="but button4" id="saveScoreBtn" type="submit" style="margin-bottom: -11%;" onclick="saveHighScore(event)" >Voir score !</button>
+                        </form>  -->
+                        <form>
+                          <input type="text" name="username" id="username" placeholder="username">
+                          <button type="submit" class="but button4" id="saveScoreBtn" type="submit" style="margin-bottom: -11%;" onclick="saveHighScore(event)" disabled>Save</button>
+                        </form>
                     </div>
                 </div>
 
